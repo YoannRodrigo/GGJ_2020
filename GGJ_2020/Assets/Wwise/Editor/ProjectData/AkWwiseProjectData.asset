@@ -12,14 +12,63 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 98f82205480110c438c916bd7aba1145, type: 3}
   m_Name: AkWwiseProjectData
   m_EditorClassIdentifier: 
-  AcousticTextureWwu: []
-  AuxBusWwu: []
-  BankWwu: []
-  EventWwu: []
-  RtpcWwu: []
-  StateWwu: []
-  SwitchWwu: []
-  TriggerWwu: []
-  ExpandedItems: []
+  AcousticTextureWwu:
+  - PhysicalPath: Virtual Acoustics\Default Work Unit.wwu
+    ParentPhysicalPath: 
+    guid: 3bef1807770bf24aa589738326e442ac
+    GuidInternal: 
+    m_lastTime: -8586211064927785372
+    List: []
+  AuxBusWwu:
+  - PhysicalPath: Master-Mixer Hierarchy\Default Work Unit.wwu
+    ParentPhysicalPath: 
+    guid: 5f07b09951d75b45836ba9cdf066c8fd
+    GuidInternal: 
+    m_lastTime: -8586211064930099184
+    List: []
+  BankWwu:
+  - PhysicalPath: SoundBanks\Default Work Unit.wwu
+    ParentPhysicalPath: 
+    guid: 1c613f6a46dbdf45b825aa959dce92bf
+    GuidInternal: 
+    m_lastTime: -8586211064927157053
+    List: []
+  EventWwu:
+  - PhysicalPath: Events\Default Work Unit.wwu
+    ParentPhysicalPath: 
+    guid: 9b20970dc15d154198d8e794caa6c986
+    GuidInternal: 
+    m_lastTime: -8586211064927815285
+    List: []
+  RtpcWwu:
+  - PhysicalPath: Game Parameters\Default Work Unit.wwu
+    ParentPhysicalPath: 
+    guid: 65719e582d0ae942bae46f87707383ed
+    GuidInternal: 
+    m_lastTime: -8586211064927795342
+    List: []
+  StateWwu:
+  - PhysicalPath: States\Default Work Unit.wwu
+    ParentPhysicalPath: 
+    guid: 29ac9f57650fe1498480134c0f80c4c9
+    GuidInternal: 
+    m_lastTime: -8586211064927127136
+    List: []
+  SwitchWwu:
+  - PhysicalPath: Switches\Default Work Unit.wwu
+    ParentPhysicalPath: 
+    guid: eb7640aa46e2d14fb0d5afd395093da1
+    GuidInternal: 
+    m_lastTime: -8586211064927117160
+    List: []
+  TriggerWwu:
+  - PhysicalPath: Triggers\Default Work Unit.wwu
+    ParentPhysicalPath: 
+    guid: f7ac6ef70684af429b5a75e4b4d6dbd7
+    GuidInternal: 
+    m_lastTime: -8586211064927775393
+    List: []
+  ExpandedItems:
+  - /GGJ_2020_WwiseProject
   autoPopulateEnabled: 1
   CurrentPluginConfig: 

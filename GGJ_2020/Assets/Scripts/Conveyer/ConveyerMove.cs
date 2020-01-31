@@ -1,18 +1,14 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 public class ConveyerMove : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    private const float CONVEYER_SPEED = 0.02f;
+    [HideInInspector] public bool canObjectBeMoved = true;
+    private void OnCollisionStay(Collision other)
     {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
+        if (other.transform.CompareTag("ObjectToRepair") && canObjectBeMoved)
+        {
+            other.transform.Translate(CONVEYER_SPEED,0,0);
+        }
     }
 }
