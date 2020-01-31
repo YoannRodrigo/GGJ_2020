@@ -15,6 +15,7 @@ public class ConveyerSpawnObject : MonoBehaviour
         if (currentObject == null)
         {
             currentObject = SpawnRandomObject();
+            currentObject.GetComponent<RotateObject>().enabled = false;
         }
     }
 
