@@ -8,13 +8,13 @@ public class AddObjectAndIcone : MonoBehaviour
     private GameObject currentObjectToRemove;
     private GameObject currentIcone;
 
-    private void Start()
+    private void Awake()
     {
         int randomIndex = Random.Range(0,objectsToRemove.Count);
         currentObjectToRemove =
             Instantiate(objectsToRemove[randomIndex], transform.position, Quaternion.identity, transform);
         randomIndex = Random.Range(0,icones.Count);
         currentIcone = Instantiate(icones[randomIndex], transform.position, Quaternion.identity, transform);
-        GetComponent<DetectFacingCamera>().SetGameObjects(currentObjectToRemove,currentIcone);
+        GetComponent<DetectFacingCamera>().SetGameObjects(currentIcone, currentObjectToRemove);
     }
 }

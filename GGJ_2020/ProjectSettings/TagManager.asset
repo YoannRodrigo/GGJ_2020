@@ -5,6 +5,7 @@ TagManager:
   serializedVersion: 2
   tags:
   - ObjectToRepair
+  - ObjectToRemove
   layers:
   - Default
   - TransparentFX

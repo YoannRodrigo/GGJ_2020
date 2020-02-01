@@ -72,5 +72,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Flipper
       objectReference: {fileID: 0}
+    - target: {fileID: -927199367670048503, guid: 0b65f66895182d046bfe7275332dde9f,
+        type: 3}
+      propertyPath: m_TagString
+      value: ObjectToRemove
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0b65f66895182d046bfe7275332dde9f, type: 3}
