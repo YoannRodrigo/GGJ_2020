@@ -72,6 +72,7 @@ GameObject:
   - component: {fileID: 9066746675766780897}
   - component: {fileID: 6616897591644092503}
   - component: {fileID: 2330574787020994027}
+  - component: {fileID: 8393039890826076627}
   m_Layer: 0
   m_Name: Fish
   m_TagString: ObjectToRepair
@@ -137,6 +138,18 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 122
   m_CollisionDetection: 0
+--- !u!114 &8393039890826076627
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 639601863376046546}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8afec8309da907646a991d708c6b1ce4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2133907326715768087
 GameObject:
   m_ObjectHideFlags: 0
@@ -238,7 +251,6 @@ GameObject:
   - component: {fileID: 8788437355725574303}
   - component: {fileID: 3083352063023787110}
   - component: {fileID: 4231312445031351513}
-  - component: {fileID: 1315719409253500358}
   m_Layer: 0
   m_Name: Fish
   m_TagString: Untagged
@@ -322,18 +334,6 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: -51593637782009219, guid: d21f5b1bec8542f40a95f627afbfcf74, type: 3}
---- !u!114 &1315719409253500358
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3672283426105465018}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8afec8309da907646a991d708c6b1ce4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &3677239680906290842
 GameObject:
   m_ObjectHideFlags: 0

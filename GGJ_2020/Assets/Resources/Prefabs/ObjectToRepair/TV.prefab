@@ -341,7 +341,6 @@ GameObject:
   - component: {fileID: 6799630700141585051}
   - component: {fileID: 2523742744309438637}
   - component: {fileID: 8086964977312949332}
-  - component: {fileID: 1097546509702152531}
   m_Layer: 0
   m_Name: TV
   m_TagString: Untagged
@@ -411,18 +410,6 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!114 &1097546509702152531
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7495816895175676040}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8afec8309da907646a991d708c6b1ce4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &7894444335185626229
 GameObject:
   m_ObjectHideFlags: 0
@@ -541,6 +528,7 @@ GameObject:
   - component: {fileID: 8943119280930989558}
   - component: {fileID: 8943119280930989557}
   - component: {fileID: 8943119280930989556}
+  - component: {fileID: 5995343993164071237}
   m_Layer: 0
   m_Name: TV
   m_TagString: ObjectToRepair
@@ -606,3 +594,15 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.18063939, y: 0.21421957, z: 0.2769034}
   m_Center: {x: -0.013432205, y: 0.10409927, z: -0.0011194944}
+--- !u!114 &5995343993164071237
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8943119280930989554}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8afec8309da907646a991d708c6b1ce4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

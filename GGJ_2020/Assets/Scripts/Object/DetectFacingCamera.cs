@@ -70,6 +70,7 @@ public class DetectFacingCamera : MonoBehaviour {
         if (mainObject.objectsToRemoveDic.ContainsKey(objectToRemove)) {
             if (isDetectingCamera && mainObject.objectsToRemoveDic[objectToRemove] == Repair.Inputs.NONE) {
                 mainObject.AddInputInDic(objectToRemove);
+                
             } else if (!isDetectingCamera) {
                 mainObject.RemoveInputInDic(objectToRemove);
             }
