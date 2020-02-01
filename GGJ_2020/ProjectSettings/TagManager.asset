@@ -6,6 +6,7 @@ TagManager:
   tags:
   - ObjectToRepair
   - ObjectToRemove
+  - ObjectToValidate
   layers:
   - Default
   - TransparentFX

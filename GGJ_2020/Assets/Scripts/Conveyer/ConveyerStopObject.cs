@@ -1,5 +1,4 @@
-﻿using System;
-using System.Collections;
+﻿using System.Collections;
 using DG.Tweening;
 using UnityEngine;
 
@@ -8,6 +7,8 @@ public class ConveyerStopObject : MonoBehaviour
     private GameObject objectToRepair;
     [SerializeField] private ConveyerMove conveyerMove;
     [SerializeField] private Transform objectViewTransform;
+    [SerializeField] private ScoreSystem scoreSystem;
+
     private void OnTriggerEnter(Collider other)
     {
         if (other.CompareTag("ObjectToRepair"))
@@ -19,6 +20,9 @@ public class ConveyerStopObject : MonoBehaviour
             objectToRepair.GetComponent<Rigidbody>().isKinematic = true;
             Debug.DrawLine(objectViewTransform.position,objectToRepair.transform.position
                 ,Color.blue,10);
+
+            scoreSystem.StartTimer();
+            Debug.Log(other.GetComponent<RotateObject>().difficulty);
         }
     }
 
@@ -27,6 +31,7 @@ public class ConveyerStopObject : MonoBehaviour
         if (objectToRepair != null)
         {
             objectToRepair.transform.DOMove(objectViewTransform.position, 1f).SetEase(Ease.OutExpo);
+            objectToRepair.tag = "ObjectToValidate";
             StartCoroutine(WaitForReset());
         }
     }
@@ -34,6 +39,8 @@ public class ConveyerStopObject : MonoBehaviour
     private IEnumerator WaitForReset()
     {
         yield return new WaitForSeconds(1f);
+        conveyerMove.canObjectBeMoved = true;
         objectToRepair = null;
     }
+    
 }

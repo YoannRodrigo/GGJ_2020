@@ -6,7 +6,7 @@ public class ConveyerMove : MonoBehaviour
     [HideInInspector] public bool canObjectBeMoved = true;
     private void OnCollisionStay(Collision other)
     {
-        if (other.transform.CompareTag("ObjectToRepair") && canObjectBeMoved)
+        if ((other.transform.CompareTag("ObjectToRepair") || other.transform.CompareTag("ObjectToValidate")) && canObjectBeMoved)
         {
             other.transform.Translate(CONVEYER_SPEED,0,0);
         }
