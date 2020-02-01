@@ -1,8 +1,10 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using DG.Tweening;
 
 public class DetectFacingCamera : MonoBehaviour {
+    private GameObject camera;
     [SerializeField]
     private int cameraLayer;
     private int layerMask;
@@ -15,18 +17,34 @@ public class DetectFacingCamera : MonoBehaviour {
     [SerializeField]
     private GameObject particuleObjectIcon;
 
-    public void SetGameObjects(GameObject particuleButtonIcon, GameObject particuleObjectIcon)
+    [SerializeField]
+    private GameObject objectToRemove;
+    [SerializeField]
+    private float distanceRemove = 1f;
+
+    private Repair mainObject;
+
+    public void SetGameObjects(GameObject particuleButtonIcon, GameObject objectToRemove)
     {
         this.particuleButtonIcon = particuleButtonIcon;
-        this.particuleObjectIcon = particuleObjectIcon;
+        this.objectToRemove = objectToRemove;
     }
 
     private void Start() {
         layerMask = 1 << cameraLayer;   // Bit shift the index of the layer to get a bit mask, This would cast rays only against colliders in layer cameraLayer.
+        //for (int i = 0; i < transform.childCount; i++) {
+        //    if (transform.GetChild(i).tag == "ObjectToRemove") {
+        //        objectToRemove = transform.GetChild(i).gameObject;
+        //    }
+        //}
+        camera = GameObject.FindGameObjectWithTag("MainCamera");
+        mainObject = transform.root.GetComponent<Repair>();
+        if (mainObject) { Debug.Log(mainObject.name); }
+        else { Debug.Log("mainObject not find"); }
     }
 
     private void Update() {
-        if(particuleButtonIcon && particuleObjectIcon)
+        if(particuleButtonIcon/* && particuleObjectIcon*/)
         {
             if (Physics.Raycast(transform.position, transform.TransformDirection(Vector3.forward), out RaycastHit hit,
                 Mathf.Infinity, layerMask))
@@ -53,17 +71,36 @@ public class DetectFacingCamera : MonoBehaviour {
             if (isDetectingCamera) {
                 //enlever objet
                 Debug.Log("enlever objet");
+                objectToRemove.transform.DOLocalMoveZ(distanceRemove, 1f).OnComplete(() => objectToRemove.SetActive(false));
             }
+        }
+
+        if (isDetectingCamera && mainObject.objectsToRemoveDic[objectToRemove] == Repair.Inputs.NONE) {
+            mainObject.AddInputInDic(objectToRemove);
+        }
+        else {
+            mainObject.RemoveInputInDic(objectToRemove);
         }
     }
 
     private void ShowIcons() {
         particuleButtonIcon.SetActive(true);  //Show button
-        particuleObjectIcon.SetActive(true);    //Show highlight
+        //particuleObjectIcon.SetActive(true);    //Show highlight
+        //if (!hasSpawnParticule) {
+        //    hasSpawnParticule = true;
+        //    //dire a l'obj on face cam
+
+        //}
+        Debug.Log("input associé : " + mainObject.objectsToRemoveDic[objectToRemove]);
     }
 
     private void HideIcons() {
         particuleButtonIcon.SetActive(false); //Hide Icon
-        particuleObjectIcon.SetActive(false);   //Hide highlight
+        //particuleObjectIcon.SetActive(false);   //Hide highlight
+        //if (hasSpawnParticule) {
+        //    hasSpawnParticule = false;
+        //    //dire a l'obj on face plus la cam
+
+        //}
     }
 }
