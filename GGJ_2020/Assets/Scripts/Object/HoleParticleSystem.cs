@@ -22,5 +22,9 @@ public class HoleParticleSystem : MonoBehaviour
             indexAlreadyChosen.Add(randomChildIndex);
             holeTransformList.Add(transform.GetChild(randomChildIndex));
         }
+
+        foreach (Transform hole in holeTransformList) {
+            hole.GetComponent<ParticleSystem>().Play();
+        }
     }
 }
