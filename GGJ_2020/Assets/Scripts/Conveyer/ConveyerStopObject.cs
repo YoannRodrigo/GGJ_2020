@@ -34,8 +34,6 @@ public class ConveyerStopObject : MonoBehaviour
             {
                 canObjectBeMoved = false;
                 objectToRepair.transform.DOMove(objectViewTransform.position, 1f).SetEase(Ease.OutExpo);
-                
-                objectToRepair.transform.GetComponent<Rigidbody>().constraints -= (int) RigidbodyConstraints.FreezePositionY;
             }
             objectToRepair.tag = "ObjectToValidate";
             StartCoroutine(WaitForReset());

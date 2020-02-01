@@ -13,11 +13,4 @@ public class ConveyerMove : MonoBehaviour
         }
     }
 
-    private void OnCollisionEnter(Collision other)
-    {
-        if ((other.transform.CompareTag("ObjectToRepair") || other.transform.CompareTag("ObjectToValidate")) && canObjectBeMoved)
-        {
-            other.transform.GetComponent<Rigidbody>().constraints += (int) RigidbodyConstraints.FreezePositionY;
-        }
-    }
 }
