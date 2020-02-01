@@ -120,7 +120,7 @@ Rigidbody:
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 0
+  m_Constraints: 112
   m_CollisionDetection: 0
 --- !u!64 &8911574589728740262
 MeshCollider:
@@ -148,6 +148,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 229e5b5d7eec21b41b0f1c4ba5b72ec8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  difficulty: 0
   childTransform: {fileID: 0}
 --- !u!1 &1899670177255625455
 GameObject:

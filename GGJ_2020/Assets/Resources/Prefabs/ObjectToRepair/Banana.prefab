@@ -42,6 +42,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 229e5b5d7eec21b41b0f1c4ba5b72ec8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  difficulty: 0
   childTransform: {fileID: 0}
 --- !u!1 &4368458550179368475
 GameObject:
