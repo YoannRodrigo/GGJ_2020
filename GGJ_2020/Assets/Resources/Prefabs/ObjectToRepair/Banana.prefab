@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6353732468949388317}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: TransformPos5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -39,7 +39,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5807202829945490367}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: TransformPos7
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -69,7 +69,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8053371555786295281}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: TransformPos4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -103,7 +103,7 @@ GameObject:
   - component: {fileID: 4049524146745179412}
   - component: {fileID: 5674546610819788284}
   - component: {fileID: 3324859363323731376}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Banana
   m_TagString: ObjectToRepair
   m_Icon: {fileID: 0}
@@ -180,6 +180,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8afec8309da907646a991d708c6b1ce4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isRepared: 0
 --- !u!1 &3869277825286388808
 GameObject:
   m_ObjectHideFlags: 0
@@ -191,7 +192,7 @@ GameObject:
   - component: {fileID: 281816333848104539}
   - component: {fileID: 9129413036361413741}
   - component: {fileID: 3282765284857841812}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Banana
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -269,7 +270,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8891611647693644760}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: TransformPos6
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -299,7 +300,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7388847125757036273}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: TransformPos2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -330,7 +331,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2564317618931084283}
   - component: {fileID: 2048925297198908921}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: TransformsPositions
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -384,7 +385,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8614957178540821892}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: TransformPos3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -414,7 +415,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2425280658140564275}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: TransformPos8
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -444,7 +445,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8927812625306938382}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: TransformPos1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
