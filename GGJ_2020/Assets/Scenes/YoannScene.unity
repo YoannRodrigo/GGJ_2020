@@ -1525,11 +1525,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Hourglass
       objectReference: {fileID: 0}
-    - target: {fileID: 2601520473941710582, guid: c0071706cb6b6ab43ac9d68afe4f464a,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c0071706cb6b6ab43ac9d68afe4f464a, type: 3}
 --- !u!1001 &2996737544046252543
@@ -1617,11 +1612,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Radio
-      objectReference: {fileID: 0}
-    - target: {fileID: 6912544043736283436, guid: c6cd1618e156a50498dd84d694a41fe1,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7617016292363619135, guid: c6cd1618e156a50498dd84d694a41fe1,
         type: 3}
