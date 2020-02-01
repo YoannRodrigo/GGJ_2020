@@ -7,7 +7,8 @@ public class ConveyerStopObject : MonoBehaviour
     private GameObject objectToRepair;
     [SerializeField] private ConveyerMove conveyerMove;
     [SerializeField] private Transform objectViewTransform;
-    private bool isFocused = false;
+    private bool isFocused;
+    private bool canObjectBeMoved = true;
 
     private void OnTriggerEnter(Collider other)
     {
@@ -29,10 +30,12 @@ public class ConveyerStopObject : MonoBehaviour
     {
         if (objectToRepair != null)
         {
-            if(!isFocused)
+            if(canObjectBeMoved)
             {
-                isFocused = true;
+                canObjectBeMoved = false;
                 objectToRepair.transform.DOMove(objectViewTransform.position, 1f).SetEase(Ease.OutExpo);
+                
+                objectToRepair.transform.GetComponent<Rigidbody>().constraints -= (int) RigidbodyConstraints.FreezePositionY;
             }
             objectToRepair.tag = "ObjectToValidate";
             StartCoroutine(WaitForReset());
@@ -44,7 +47,7 @@ public class ConveyerStopObject : MonoBehaviour
         yield return new WaitForSeconds(1f);
         conveyerMove.canObjectBeMoved = true;
         objectToRepair = null;
-        isFocused = false;
+        canObjectBeMoved = true;
     }
 
     public bool IsFocused {

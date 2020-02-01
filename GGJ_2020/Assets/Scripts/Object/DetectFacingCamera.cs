@@ -117,7 +117,8 @@ public class DetectFacingCamera : MonoBehaviour {
     }
 
     private void ShowIcons() {
-        particuleButtonIcon.SetActive(true);  //Show button
+        if(particuleButtonIcon)
+            particuleButtonIcon.SetActive(true);  //Show button
         //particuleObjectIcon.SetActive(true);    //Show highlight
         //if (!hasSpawnParticule) {
         //    hasSpawnParticule = true;
@@ -128,7 +129,8 @@ public class DetectFacingCamera : MonoBehaviour {
     }
 
     private void HideIcons() {
-        particuleButtonIcon.SetActive(false); //Hide Icon
+        if(particuleButtonIcon)
+                particuleButtonIcon.SetActive(false); //Hide Icon
         //particuleObjectIcon.SetActive(false);   //Hide highlight
         //if (hasSpawnParticule) {
         //    hasSpawnParticule = false;

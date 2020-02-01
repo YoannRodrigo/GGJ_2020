@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using System;
+using UnityEngine;
 
 public class ConveyerMove : MonoBehaviour
 {
@@ -9,6 +10,14 @@ public class ConveyerMove : MonoBehaviour
         if ((other.transform.CompareTag("ObjectToRepair") || other.transform.CompareTag("ObjectToValidate")) && canObjectBeMoved)
         {
             other.transform.Translate(CONVEYER_SPEED,0,0);
+        }
+    }
+
+    private void OnCollisionEnter(Collision other)
+    {
+        if ((other.transform.CompareTag("ObjectToRepair") || other.transform.CompareTag("ObjectToValidate")) && canObjectBeMoved)
+        {
+            other.transform.GetComponent<Rigidbody>().constraints += (int) RigidbodyConstraints.FreezePositionY;
         }
     }
 }
