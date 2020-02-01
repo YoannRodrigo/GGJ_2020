@@ -29,7 +29,11 @@ public class ConveyerStopObject : MonoBehaviour
     {
         if (objectToRepair != null)
         {
-            objectToRepair.transform.DOMove(objectViewTransform.position, 1f).SetEase(Ease.OutExpo);
+            if(!isFocused)
+            {
+                isFocused = true;
+                objectToRepair.transform.DOMove(objectViewTransform.position, 1f).SetEase(Ease.OutExpo);
+            }
             objectToRepair.tag = "ObjectToValidate";
             StartCoroutine(WaitForReset());
         }
@@ -40,6 +44,7 @@ public class ConveyerStopObject : MonoBehaviour
         yield return new WaitForSeconds(1f);
         conveyerMove.canObjectBeMoved = true;
         objectToRepair = null;
+        isFocused = false;
     }
 
     public bool IsFocused {

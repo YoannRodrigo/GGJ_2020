@@ -233,11 +233,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   objectsToSpawn:
-  - {fileID: 5874145831946665548, guid: 4c30cc46fc3d6884aae3087adc4fae76, type: 3}
-  - {fileID: 2929493605890653152, guid: e682c4fcc3715ab45b83f3a9a5bda30a, type: 3}
-  - {fileID: 2601520473941710582, guid: c0071706cb6b6ab43ac9d68afe4f464a, type: 3}
-  - {fileID: 6912544043736283436, guid: c6cd1618e156a50498dd84d694a41fe1, type: 3}
-  - {fileID: 6912544043736283436, guid: c6cd1618e156a50498dd84d694a41fe1, type: 3}
+  - {fileID: 2851468813814811050, guid: e682c4fcc3715ab45b83f3a9a5bda30a, type: 3}
+  - {fileID: 639601863376046546, guid: 4c30cc46fc3d6884aae3087adc4fae76, type: 3}
+  - {fileID: 8330719884909149849, guid: c0071706cb6b6ab43ac9d68afe4f464a, type: 3}
+  - {fileID: 6666514789453961838, guid: c6cd1618e156a50498dd84d694a41fe1, type: 3}
+  - {fileID: 8943119280930989554, guid: f434cf6ffe20b3f4686b8b788953e015, type: 3}
   spawnPoint: {fileID: 1196273219}
 --- !u!114 &150062717
 MonoBehaviour:
@@ -857,7 +857,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   conveyerMove: {fileID: 150062717}
   objectViewTransform: {fileID: 1455624640}
-  scoreSystem: {fileID: 0}
 --- !u!1 &1360416771
 GameObject:
   m_ObjectHideFlags: 0
