@@ -8,6 +8,8 @@ public class ConveyerStopObject : MonoBehaviour
     private GameObject objectToRepair;
     [SerializeField] private ConveyerMove conveyerMove;
     [SerializeField] private Transform objectViewTransform;
+    [SerializeField] private ScoreSystem scoreSystem;
+
     private void OnTriggerEnter(Collider other)
     {
         if (other.CompareTag("ObjectToRepair"))
@@ -19,6 +21,9 @@ public class ConveyerStopObject : MonoBehaviour
             objectToRepair.GetComponent<Rigidbody>().isKinematic = true;
             Debug.DrawLine(objectViewTransform.position,objectToRepair.transform.position
                 ,Color.blue,10);
+
+            scoreSystem.StartTimer();
+            Debug.Log(other.GetComponent<RotateObject>().difficulty);
         }
     }
 
@@ -36,4 +41,5 @@ public class ConveyerStopObject : MonoBehaviour
         yield return new WaitForSeconds(1f);
         objectToRepair = null;
     }
+    
 }
