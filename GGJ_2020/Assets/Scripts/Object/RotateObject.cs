@@ -5,6 +5,7 @@ public class RotateObject : MonoBehaviour
 {
     public ObjectDifficulty difficulty;
     [SerializeField] private Transform childTransform;
+    
     private void Update()
     {
         float x = Input.GetAxis("Vertical");
@@ -19,6 +20,13 @@ public class RotateObject : MonoBehaviour
             GetComponent<Rigidbody>().useGravity = true;
             GetComponent<Rigidbody>().isKinematic = false;
             transform.DOMove(target.position, 1f).SetEase(Ease.OutExpo);
+            
+            if (target.GetComponent<ConveyerStopObject>().IsFocused) {
+                ScoreSystem.Instance.Score = ScoreSystem.Instance.SetScore(gameObject, ScoreSystem.Instance.TimeLapsed);
+            }
+            target.GetComponent<ConveyerStopObject>().IsFocused = false;
+            
+
         }
     }
 }

@@ -7,7 +7,7 @@ public class ConveyerStopObject : MonoBehaviour
     private GameObject objectToRepair;
     [SerializeField] private ConveyerMove conveyerMove;
     [SerializeField] private Transform objectViewTransform;
-    [SerializeField] private ScoreSystem scoreSystem;
+    private bool isFocused = false;
 
     private void OnTriggerEnter(Collider other)
     {
@@ -20,9 +20,8 @@ public class ConveyerStopObject : MonoBehaviour
             objectToRepair.GetComponent<Rigidbody>().isKinematic = true;
             Debug.DrawLine(objectViewTransform.position,objectToRepair.transform.position
                 ,Color.blue,10);
-
-            scoreSystem.StartTimer();
-            Debug.Log(other.GetComponent<RotateObject>().difficulty);
+            
+            isFocused = true;
         }
     }
 
@@ -42,5 +41,14 @@ public class ConveyerStopObject : MonoBehaviour
         conveyerMove.canObjectBeMoved = true;
         objectToRepair = null;
     }
-    
+
+    public bool IsFocused {
+        get {
+            return isFocused;
+        }
+
+        set {
+            isFocused = value;
+        }
+    }
 }
