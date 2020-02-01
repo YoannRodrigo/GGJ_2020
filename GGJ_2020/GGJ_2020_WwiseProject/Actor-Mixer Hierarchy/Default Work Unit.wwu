@@ -4,6 +4,19 @@
 		<WorkUnit Name="Default Work Unit" ID="{99394163-F1CA-416C-A834-61F2B601E76F}" PersistMode="Standalone">
 			<ChildrenList>
 				<Sound Name="antenna" ID="{3AA2A04B-B7B9-43DF-BBBA-AD5C68663784}" ShortID="201520340">
+					<PropertyList>
+						<Property Name="Pitch" Type="int32">
+							<ModifierList>
+								<ModifierInfo>
+									<Modifier Name="" ID="{C00EDB60-59B3-4E15-968A-E0BB1481AA8F}">
+										<PropertyList>
+											<Property Name="Enabled" Type="bool" Value="True"/>
+										</PropertyList>
+									</Modifier>
+								</ModifierInfo>
+							</ModifierList>
+						</Property>
+					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Conversion">
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{5F6D671A-C034-46E9-831A-847F6B3CF8BD}"/>

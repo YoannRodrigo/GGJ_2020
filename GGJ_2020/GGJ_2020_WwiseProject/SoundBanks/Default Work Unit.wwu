@@ -5,7 +5,30 @@
 			<ChildrenList>
 				<SoundBank Name="main" ID="{A4EAD945-82CA-4E13-A8FA-2DBFE60127F3}">
 					<ObjectInclusionList>
+						<ObjectRef Name="Scotch" ID="{31F22BEB-98D9-40B2-A21C-06BB89E27114}" WorkUnitID="{0D97209B-5DC1-4115-98D8-E794CAA6C986}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Pliers" ID="{A58829D2-AFC5-412E-8B8C-BF934EE6131B}" WorkUnitID="{0D97209B-5DC1-4115-98D8-E794CAA6C986}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Screw" ID="{BD08F16E-41ED-4158-A9C8-E31B43C9D393}" WorkUnitID="{0D97209B-5DC1-4115-98D8-E794CAA6C986}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Antenna" ID="{12B1A4EC-9918-426B-9698-AFCF25720AB1}" WorkUnitID="{0D97209B-5DC1-4115-98D8-E794CAA6C986}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Marteau" ID="{D9F148F4-6FA7-4359-AA5C-489ADDE0455E}" WorkUnitID="{0D97209B-5DC1-4115-98D8-E794CAA6C986}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Drill" ID="{E9E87825-52F3-439A-A083-14A17C605D3A}" WorkUnitID="{0D97209B-5DC1-4115-98D8-E794CAA6C986}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Conveyor_Belt" ID="{2E1B8309-8287-43A3-8D5A-6BB21F2640E1}" WorkUnitID="{0D97209B-5DC1-4115-98D8-E794CAA6C986}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Fleches_directionnelles" ID="{BD028D04-C9FC-43C1-80F3-A69274597A86}" WorkUnitID="{0D97209B-5DC1-4115-98D8-E794CAA6C986}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="LB_RB" ID="{6BD43BE3-A716-442C-95D5-6A85395D93A3}" WorkUnitID="{0D97209B-5DC1-4115-98D8-E794CAA6C986}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Nail" ID="{2D0883FE-C1FF-4469-B7EC-BD1973B27E32}" WorkUnitID="{0D97209B-5DC1-4115-98D8-E794CAA6C986}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Sparadrap" ID="{05E67B5C-98E3-4473-93E1-E928807EB85E}" WorkUnitID="{0D97209B-5DC1-4115-98D8-E794CAA6C986}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Fish" ID="{B032DF53-3EC0-4601-B0EE-A3AD16DADA9A}" WorkUnitID="{0D97209B-5DC1-4115-98D8-E794CAA6C986}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Saw" ID="{E5C00F5C-60C9-492D-8EE6-D0EE09938D7E}" WorkUnitID="{0D97209B-5DC1-4115-98D8-E794CAA6C986}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Scalpel" ID="{961656EC-7599-4A6C-8C89-82C79E360482}" WorkUnitID="{0D97209B-5DC1-4115-98D8-E794CAA6C986}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Banana" ID="{AE33E762-9481-4A7A-94C3-543FDEC2E4A6}" WorkUnitID="{0D97209B-5DC1-4115-98D8-E794CAA6C986}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Bouchon" ID="{B24487D9-0C80-4AA2-8994-ECF42A4E1387}" WorkUnitID="{0D97209B-5DC1-4115-98D8-E794CAA6C986}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Stain" ID="{AC418170-1EC1-4AD7-819D-DDA1428AB9DF}" WorkUnitID="{0D97209B-5DC1-4115-98D8-E794CAA6C986}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Hand" ID="{0C49983F-A123-4B83-97CA-7268D5EBF319}" WorkUnitID="{0D97209B-5DC1-4115-98D8-E794CAA6C986}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Pshit" ID="{01239668-91E1-4C88-95EA-6CC42BB6C3DC}" WorkUnitID="{0D97209B-5DC1-4115-98D8-E794CAA6C986}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Crowbar" ID="{CD5B4D19-2B3B-4DAB-9064-87D451871B58}" WorkUnitID="{0D97209B-5DC1-4115-98D8-E794CAA6C986}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Corkcrew" ID="{3A3E7104-0208-4DBD-B211-9FD39A80BFCD}" WorkUnitID="{0D97209B-5DC1-4115-98D8-E794CAA6C986}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Validation" ID="{ED43D17E-9CE3-4E4D-A2B8-CB39C23E200D}" WorkUnitID="{0D97209B-5DC1-4115-98D8-E794CAA6C986}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Monkey" ID="{976A387C-75C0-4E96-A01A-B3D32E43125D}" WorkUnitID="{0D97209B-5DC1-4115-98D8-E794CAA6C986}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Screwdriver" ID="{07A8CBB6-AE0A-4F57-ABC1-89BD7C844E3E}" WorkUnitID="{0D97209B-5DC1-4115-98D8-E794CAA6C986}" Filter="7" Origin="Manual"/>
 					</ObjectInclusionList>
 					<ObjectExclusionList/>
 					<GameSyncExclusionList/>
