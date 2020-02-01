@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using DG.Tweening;
 using UnityEngine;
 
@@ -14,6 +15,8 @@ public class ConveyerStopObject : MonoBehaviour
             conveyerMove.canObjectBeMoved = false;
             objectToRepair = other.gameObject;
             objectToRepair.GetComponent<RotateObject>().enabled = true;
+            objectToRepair.GetComponent<Rigidbody>().useGravity = false;
+            objectToRepair.GetComponent<Rigidbody>().isKinematic = true;
             Debug.DrawLine(objectViewTransform.position,objectToRepair.transform.position
                 ,Color.blue,10);
         }
@@ -24,6 +27,13 @@ public class ConveyerStopObject : MonoBehaviour
         if (objectToRepair != null)
         {
             objectToRepair.transform.DOMove(objectViewTransform.position, 1f).SetEase(Ease.OutExpo);
+            StartCoroutine(WaitForReset());
         }
+    }
+
+    private IEnumerator WaitForReset()
+    {
+        yield return new WaitForSeconds(1f);
+        objectToRepair = null;
     }
 }
