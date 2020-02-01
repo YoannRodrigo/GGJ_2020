@@ -67,20 +67,53 @@ public class DetectFacingCamera : MonoBehaviour {
             HideIcons();
         }
 
-        if (Input.GetButtonDown("Fire1")) {
-            if (isDetectingCamera) {
-                //enlever objet
-                Debug.Log("enlever objet");
-                objectToRemove.transform.DOLocalMoveZ(distanceRemove, 1f).OnComplete(() => objectToRemove.SetActive(false));
+        if (mainObject.objectsToRemoveDic.ContainsKey(objectToRemove)) {
+            if (isDetectingCamera && mainObject.objectsToRemoveDic[objectToRemove] == Repair.Inputs.NONE) {
+                mainObject.AddInputInDic(objectToRemove);
+            } else if (!isDetectingCamera) {
+                mainObject.RemoveInputInDic(objectToRemove);
             }
         }
 
-        if (isDetectingCamera && mainObject.objectsToRemoveDic[objectToRemove] == Repair.Inputs.NONE) {
-            mainObject.AddInputInDic(objectToRemove);
+        if (Input.GetButtonDown("Fire1")) {
+            if (mainObject.objectsToRemoveDic.ContainsKey(objectToRemove)) {
+                Debug.Log("gameobject : " + gameObject + "; value : " + mainObject.objectsToRemoveDic[objectToRemove]);
+                if (isDetectingCamera && mainObject.objectsToRemoveDic[objectToRemove] == Repair.Inputs.SOUTH) {
+                    //enlever objet
+                    RemoveObject();
+                }
+            }
         }
-        else {
-            mainObject.RemoveInputInDic(objectToRemove);
+        else if (Input.GetButtonDown("Fire3")) {
+            if (mainObject.objectsToRemoveDic.ContainsKey(objectToRemove)) {
+                if (isDetectingCamera && mainObject.objectsToRemoveDic[objectToRemove] == Repair.Inputs.WEST) {
+                    //enlever objet
+                    RemoveObject();
+                }
+            }
         }
+        else if (Input.GetButtonDown("Jump")) {
+            if (mainObject.objectsToRemoveDic.ContainsKey(objectToRemove)) {
+                if (isDetectingCamera && mainObject.objectsToRemoveDic[objectToRemove] == Repair.Inputs.NORTH) {
+                    //enlever objet
+                    RemoveObject();
+                }
+            }
+        }
+        else if (Input.GetButtonDown("Fire2")) {
+            if (mainObject.objectsToRemoveDic.ContainsKey(objectToRemove)) {
+                if (isDetectingCamera && mainObject.objectsToRemoveDic[objectToRemove] == Repair.Inputs.EAST) {
+                    //enlever objet
+                    RemoveObject();
+                }
+            }
+        }
+    }
+
+    private void RemoveObject() {
+        Debug.Log("enlever objet");
+        mainObject.DeleteObjectInDic(objectToRemove);
+        objectToRemove.transform.DOLocalMoveZ(distanceRemove, 1f).OnComplete(() => objectToRemove.SetActive(false));
     }
 
     private void ShowIcons() {
@@ -91,7 +124,7 @@ public class DetectFacingCamera : MonoBehaviour {
         //    //dire a l'obj on face cam
 
         //}
-        Debug.Log("input associé : " + mainObject.objectsToRemoveDic[objectToRemove]);
+        //Debug.Log("input associé : " + mainObject.objectsToRemoveDic[objectToRemove]);
     }
 
     private void HideIcons() {

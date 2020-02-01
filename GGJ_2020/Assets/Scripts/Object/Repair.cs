@@ -23,7 +23,7 @@ public class Repair : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+
     }
 
     public void AddInputInDic(GameObject key) {
@@ -48,6 +48,10 @@ public class Repair : MonoBehaviour
     }
 
     public void RemoveInputInDic(GameObject key) {
+        objectsToRemoveDic[key] = Inputs.NONE;
+    }
 
+    public void DeleteObjectInDic(GameObject key) {
+        objectsToRemoveDic.Remove(key);
     }
 }
