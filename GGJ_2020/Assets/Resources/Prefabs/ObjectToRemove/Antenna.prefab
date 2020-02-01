@@ -70,7 +70,12 @@ PrefabInstance:
     - target: {fileID: -927199367670048503, guid: cf6a8f60aab4eb94fb79ec02575f6f3f,
         type: 3}
       propertyPath: m_Name
-      value: Antenne
+      value: Antenna
+      objectReference: {fileID: 0}
+    - target: {fileID: -927199367670048503, guid: cf6a8f60aab4eb94fb79ec02575f6f3f,
+        type: 3}
+      propertyPath: m_TagString
+      value: ObjectToRemove
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cf6a8f60aab4eb94fb79ec02575f6f3f, type: 3}
