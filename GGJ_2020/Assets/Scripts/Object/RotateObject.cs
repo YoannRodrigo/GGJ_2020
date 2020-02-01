@@ -3,6 +3,8 @@ using UnityEngine;
 
 public class RotateObject : MonoBehaviour
 {
+    public ObjectDifficulty difficulty;
+    [SerializeField] private Transform childTransform;
     private void Update()
     {
         float x = Input.GetAxis("Vertical");
