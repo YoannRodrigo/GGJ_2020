@@ -48,6 +48,13 @@ public class DetectFacingCamera : MonoBehaviour {
         } else {
             HideIcons();
         }
+
+        if (Input.GetButtonDown("Fire1")) {
+            if (isDetectingCamera) {
+                //enlever objet
+                Debug.Log("enlever objet");
+            }
+        }
     }
 
     private void ShowIcons() {
