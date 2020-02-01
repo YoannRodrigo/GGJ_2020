@@ -10,7 +10,7 @@ PrefabInstance:
     - target: {fileID: -4216859302048453862, guid: 0b65f66895182d046bfe7275332dde9f,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.39
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 0b65f66895182d046bfe7275332dde9f,
         type: 3}
@@ -70,7 +70,7 @@ PrefabInstance:
     - target: {fileID: -927199367670048503, guid: 0b65f66895182d046bfe7275332dde9f,
         type: 3}
       propertyPath: m_Name
-      value: Nageoires
+      value: Flipper
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0b65f66895182d046bfe7275332dde9f, type: 3}
