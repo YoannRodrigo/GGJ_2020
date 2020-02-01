@@ -70,7 +70,12 @@ PrefabInstance:
     - target: {fileID: -927199367670048503, guid: 43301cc19f9eede459e681c6ebd8b5e3,
         type: 3}
       propertyPath: m_Name
-      value: Bouchon
+      value: Plug
+      objectReference: {fileID: 0}
+    - target: {fileID: -927199367670048503, guid: 43301cc19f9eede459e681c6ebd8b5e3,
+        type: 3}
+      propertyPath: m_TagString
+      value: ObjectToRemove
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 43301cc19f9eede459e681c6ebd8b5e3, type: 3}
