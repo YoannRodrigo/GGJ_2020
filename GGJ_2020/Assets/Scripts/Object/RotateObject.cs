@@ -5,6 +5,7 @@ public class RotateObject : MonoBehaviour
 {
     public ObjectDifficulty difficulty;
     [SerializeField] private Transform childTransform;
+    private bool canBeMoved = true;
     
     private void Update()
     {
@@ -12,14 +13,18 @@ public class RotateObject : MonoBehaviour
         float y = Input.GetAxis("Horizontal");
         bool validate = Input.GetAxis("Validate") > 0.0f;
         
-        transform.Rotate(x, -y, 0,Space.World);
+        childTransform.Rotate(x, -y, 0,Space.World);
 
         if (validate)
         {
             Transform target = FindObjectOfType<ConveyerStopObject>().transform;
             GetComponent<Rigidbody>().useGravity = true;
             GetComponent<Rigidbody>().isKinematic = false;
-            transform.DOMove(target.position, 1f).SetEase(Ease.OutExpo);
+            if(canBeMoved)
+            {
+                canBeMoved = false;
+                transform.DOMove(target.position, 1f).SetEase(Ease.OutExpo);
+            }
             
             if (target.GetComponent<ConveyerStopObject>().IsFocused) {
                 ScoreSystem.Instance.Score = ScoreSystem.Instance.SetScore(gameObject, ScoreSystem.Instance.TimeLapsed);
