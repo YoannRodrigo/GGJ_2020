@@ -7,6 +7,7 @@ public class GameManager : MonoBehaviour
 {
     [SerializeField]
     private Animator fadeAnimator;
+    public int sceneIndex;
 
     void Update()
     {
@@ -18,6 +19,6 @@ public class GameManager : MonoBehaviour
     IEnumerator SwitchScene() {
         fadeAnimator.SetTrigger("triggerFade");
         yield return new WaitForSeconds(2f);
-        SceneManager.LoadScene(1);
+        SceneManager.LoadScene(sceneIndex);
     }
 }

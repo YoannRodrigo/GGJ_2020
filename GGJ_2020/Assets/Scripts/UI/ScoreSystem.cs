@@ -9,7 +9,7 @@ public class ScoreSystem : GenericSingleton<ScoreSystem>
     public Text TimeTextField;
     public Text ScoreTextField;
 
-    private int score = 0;
+    private static int score = 0;
     private float timeSinceObjectInFront;
     private float timeLapsed = 0;
     
