@@ -1377,35 +1377,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: Banana
       objectReference: {fileID: 0}
-    - target: {fileID: 2929493605890653152, guid: e682c4fcc3715ab45b83f3a9a5bda30a,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e682c4fcc3715ab45b83f3a9a5bda30a, type: 3}
---- !u!1 &106670172320039504 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 9131934205932589882, guid: e682c4fcc3715ab45b83f3a9a5bda30a,
-    type: 3}
-  m_PrefabInstance: {fileID: 106670172320039503}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &106670172320039505
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 106670172320039504}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fc2f57491cdea5b4d8518f7dcfa251c7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  holeTransformList: []
-  objectToRemovePrefab: {fileID: 1684122739739451992, guid: b6c0c1d2fb96a0c4fba2219487a9f297,
-    type: 3}
-  maxHoles: 3
 --- !u!1001 &928530104313251581
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1417,11 +1390,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: TV
-      objectReference: {fileID: 0}
-    - target: {fileID: 1448516797355636046, guid: f434cf6ffe20b3f4686b8b788953e015,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2468381075811288925, guid: f434cf6ffe20b3f4686b8b788953e015,
         type: 3}
@@ -1480,28 +1448,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f434cf6ffe20b3f4686b8b788953e015, type: 3}
---- !u!1 &928530104313251582 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1266326035672424883, guid: f434cf6ffe20b3f4686b8b788953e015,
-    type: 3}
-  m_PrefabInstance: {fileID: 928530104313251581}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &928530104313251583
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 928530104313251582}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fc2f57491cdea5b4d8518f7dcfa251c7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  holeTransformList: []
-  objectToRemovePrefab: {fileID: 1684122739739451992, guid: b6c0c1d2fb96a0c4fba2219487a9f297,
-    type: 3}
-  maxHoles: 3
 --- !u!1001 &1795602448824373855
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1571,28 +1517,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c0071706cb6b6ab43ac9d68afe4f464a, type: 3}
---- !u!1 &1795602448824373856 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 6581528383569085435, guid: c0071706cb6b6ab43ac9d68afe4f464a,
-    type: 3}
-  m_PrefabInstance: {fileID: 1795602448824373855}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1795602448824373857
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1795602448824373856}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fc2f57491cdea5b4d8518f7dcfa251c7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  holeTransformList: []
-  objectToRemovePrefab: {fileID: 1684122739739451992, guid: b6c0c1d2fb96a0c4fba2219487a9f297,
-    type: 3}
-  maxHoles: 3
 --- !u!1001 &2996737544046252543
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1736,25 +1660,3 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c6cd1618e156a50498dd84d694a41fe1, type: 3}
---- !u!1 &3860610324106865602 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 7777356944827908448, guid: c6cd1618e156a50498dd84d694a41fe1,
-    type: 3}
-  m_PrefabInstance: {fileID: 3860610324106865601}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &3860610324106865603
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3860610324106865602}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fc2f57491cdea5b4d8518f7dcfa251c7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  holeTransformList: []
-  objectToRemovePrefab: {fileID: 1684122739739451992, guid: b6c0c1d2fb96a0c4fba2219487a9f297,
-    type: 3}
-  maxHoles: 3
