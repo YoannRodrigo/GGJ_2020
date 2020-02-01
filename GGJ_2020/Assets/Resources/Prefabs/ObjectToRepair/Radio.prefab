@@ -322,6 +322,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 978617494238144551}
+  - component: {fileID: 3860610324106865603}
   m_Layer: 0
   m_Name: TransformPositions
   m_TagString: Untagged
@@ -355,6 +356,22 @@ Transform:
   m_Father: {fileID: 7617016292363619135}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &3860610324106865603
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7777356944827908448}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fc2f57491cdea5b4d8518f7dcfa251c7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  holeTransformList: []
+  objectToRemovePrefab: {fileID: 1684122739739451992, guid: b6c0c1d2fb96a0c4fba2219487a9f297,
+    type: 3}
+  maxHoles: 3
 --- !u!1 &8047048718256454905
 GameObject:
   m_ObjectHideFlags: 0
@@ -529,15 +546,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ba2daf4d0f382b04192232b944772bd2, type: 3}
---- !u!1 &6912544043736283436 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: -927199367670048503, guid: ba2daf4d0f382b04192232b944772bd2,
-    type: 3}
-  m_PrefabInstance: {fileID: 3228983319277068325}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &7617016292363619135 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -4216859302048453862, guid: ba2daf4d0f382b04192232b944772bd2,
+    type: 3}
+  m_PrefabInstance: {fileID: 3228983319277068325}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &6912544043736283436 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: -927199367670048503, guid: ba2daf4d0f382b04192232b944772bd2,
     type: 3}
   m_PrefabInstance: {fileID: 3228983319277068325}
   m_PrefabAsset: {fileID: 0}

@@ -52,6 +52,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4504584853680286803}
+  - component: {fileID: 106670172320039505}
   m_Layer: 0
   m_Name: TransformsPositions
   m_TagString: Untagged
@@ -73,6 +74,22 @@ Transform:
   m_Father: {fileID: 2232940102151375347}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &106670172320039505
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9131934205932589882}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fc2f57491cdea5b4d8518f7dcfa251c7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  holeTransformList: []
+  objectToRemovePrefab: {fileID: 1684122739739451992, guid: b6c0c1d2fb96a0c4fba2219487a9f297,
+    type: 3}
+  maxHoles: 3
 --- !u!1001 &6595042266021929705
 PrefabInstance:
   m_ObjectHideFlags: 0
