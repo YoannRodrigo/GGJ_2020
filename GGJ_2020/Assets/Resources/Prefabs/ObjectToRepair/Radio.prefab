@@ -180,36 +180,6 @@ Transform:
   m_Father: {fileID: 978617494238144551}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 68.23, y: 0, z: -45.491}
---- !u!1 &5180513789556532479
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1786906130333287494}
-  m_Layer: 0
-  m_Name: TransformPos3
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1786906130333287494
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5180513789556532479}
-  m_LocalRotation: {x: -0.11211316, y: -0.11471294, z: 0.7059048, w: 0.6899059}
-  m_LocalPosition: {x: -0.0445, y: 0, z: 0.116}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 978617494238144551}
-  m_RootOrder: 2
-  m_LocalEulerAnglesHint: {x: 0.416, y: -18.456001, z: 91.246}
 --- !u!54 &4303076601558502947
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -240,19 +210,6 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 5060444177187149915, guid: ba2daf4d0f382b04192232b944772bd2, type: 3}
---- !u!114 &1007928472460075052
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6912544043736283436}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 229e5b5d7eec21b41b0f1c4ba5b72ec8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  childTransform: {fileID: 0}
 --- !u!114 &-5154487866718129708
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -265,6 +222,50 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8afec8309da907646a991d708c6b1ce4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1007928472460075052
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6912544043736283436}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 229e5b5d7eec21b41b0f1c4ba5b72ec8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  difficulty: 0
+  childTransform: {fileID: 0}
+--- !u!1 &5180513789556532479
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1786906130333287494}
+  m_Layer: 0
+  m_Name: TransformPos3
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1786906130333287494
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5180513789556532479}
+  m_LocalRotation: {x: -0.11211316, y: -0.11471294, z: 0.7059048, w: 0.6899059}
+  m_LocalPosition: {x: -0.0445, y: 0, z: 0.116}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 978617494238144551}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0.416, y: -18.456001, z: 91.246}
 --- !u!1 &7331941921249093372
 GameObject:
   m_ObjectHideFlags: 0
@@ -383,7 +384,7 @@ MonoBehaviour:
   holeTransformList: []
   objectToRemovePrefab: {fileID: 1684122739739451992, guid: b6c0c1d2fb96a0c4fba2219487a9f297,
     type: 3}
-  maxHoles: 3
+  maxHoles: 12
 --- !u!1 &8047048718256454905
 GameObject:
   m_ObjectHideFlags: 0

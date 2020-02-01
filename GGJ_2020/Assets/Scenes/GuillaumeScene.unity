@@ -577,7 +577,6 @@ GameObject:
   - component: {fileID: 963194226}
   - component: {fileID: 963194231}
   - component: {fileID: 963194230}
-  - component: {fileID: 963194232}
   m_Layer: 8
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -706,21 +705,8 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 2.8529575, y: 1, z: 1}
-  m_Center: {x: -0.0246073, y: 0, z: 0}
---- !u!114 &963194232
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 963194225}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d01a3aa4b17a8a345915741dbf1e1f2c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  objectsFacingCamera: 0
+  m_Size: {x: 50.835037, y: 28.003708, z: 1.0000001}
+  m_Center: {x: -3.7632217, y: -1.0370369, z: 0.000000014846449}
 --- !u!1 &1196273218
 GameObject:
   m_ObjectHideFlags: 0
@@ -810,6 +796,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   conveyerMove: {fileID: 150062717}
   objectViewTransform: {fileID: 1455624640}
+  scoreSystem: {fileID: 0}
 --- !u!1 &1360416771
 GameObject:
   m_ObjectHideFlags: 0

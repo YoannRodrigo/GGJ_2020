@@ -50,7 +50,7 @@ MonoBehaviour:
   - {fileID: 581785159788050096, guid: 3e8f15be21d32334aa16738210735422, type: 3}
   - {fileID: 8413314045558169937, guid: d654d2e9563d0c04d815c6e578792223, type: 3}
   icones:
-  - {fileID: 654770592947366528, guid: b650b32c5cb05b148bfd5b77f0d6038d, type: 3}
+  - {fileID: 5283132226369327487, guid: 6ba1a3012e5060d4bae65768c53be8e6, type: 3}
 --- !u!114 &1684122739739451995
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -66,3 +66,5 @@ MonoBehaviour:
   cameraLayer: 8
   particuleButtonIcon: {fileID: 0}
   particuleObjectIcon: {fileID: 0}
+  objectToRemove: {fileID: 0}
+  distanceRemove: 1
