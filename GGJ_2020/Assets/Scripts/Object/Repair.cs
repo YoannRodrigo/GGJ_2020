@@ -8,7 +8,7 @@ public class Repair : MonoBehaviour
 
     public Dictionary<GameObject, Inputs> objectsToRemoveDic;
 
-
+    public bool isRepared;
 
     // Start is called before the first frame update
     void Start() {
@@ -23,7 +23,6 @@ public class Repair : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
     }
 
     public void AddInputInDic(GameObject key) {
@@ -53,5 +52,7 @@ public class Repair : MonoBehaviour
 
     public void DeleteObjectInDic(GameObject key) {
         objectsToRemoveDic.Remove(key);
+
+        isRepared = objectsToRemoveDic.Count == 0;
     }
 }
