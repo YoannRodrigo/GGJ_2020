@@ -8,6 +8,6 @@ public class RotateObject : MonoBehaviour
         float x = Input.GetAxis("Vertical");
         float y = Input.GetAxis("Horizontal");
         
-        childTransform.Rotate(x, -y, 0,Space.World);
+        transform.Rotate(x, -y, 0,Space.World);
     }
 }

@@ -45,8 +45,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   objectsToRemove:
-  - {fileID: 6717343655613498165, guid: 5b1763e9fcbf5744281e202d01a5658a, type: 3}
-  - {fileID: 973107526414595213, guid: 296ca1428f102d24fab3a02f6e3f1e6a, type: 3}
+  - {fileID: 3654795949006061184, guid: 3842721a903e8814a93ea98e2fd9e479, type: 3}
+  - {fileID: 4340733466323405151, guid: cc3a9f78d5f8b364289120f5b00d0d1d, type: 3}
+  - {fileID: 581785159788050096, guid: 3e8f15be21d32334aa16738210735422, type: 3}
+  - {fileID: 8413314045558169937, guid: d654d2e9563d0c04d815c6e578792223, type: 3}
   icones:
   - {fileID: 654770592947366528, guid: b650b32c5cb05b148bfd5b77f0d6038d, type: 3}
 --- !u!114 &1684122739739451995
