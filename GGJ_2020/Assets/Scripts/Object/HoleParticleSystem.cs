@@ -9,6 +9,7 @@ public class HoleParticleSystem : MonoBehaviour
     [SerializeField]
     private List<Transform> holeTransformList = new List<Transform>();
     private HashSet<int> indexAlreadyChosen = new HashSet<int>();
+    [SerializeField] private GameObject objectToRemovePrefab;
     public int maxHoles;
     #endregion
 
@@ -21,6 +22,11 @@ public class HoleParticleSystem : MonoBehaviour
 
             indexAlreadyChosen.Add(randomChildIndex);
             holeTransformList.Add(transform.GetChild(randomChildIndex));
+        }
+
+        foreach (Transform holeTransform in holeTransformList)
+        {
+            Instantiate(objectToRemovePrefab, holeTransform.position, holeTransform.rotation, holeTransform);
         }
     }
 }

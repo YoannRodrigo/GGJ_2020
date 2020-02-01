@@ -15,19 +15,31 @@ public class DetectFacingCamera : MonoBehaviour {
     [SerializeField]
     private GameObject particuleObjectIcon;
 
-    void Start() {
+    public void SetGameObjects(GameObject particuleButtonIcon, GameObject particuleObjectIcon)
+    {
+        this.particuleButtonIcon = particuleButtonIcon;
+        this.particuleObjectIcon = particuleObjectIcon;
+    }
+
+    private void Start() {
         layerMask = 1 << cameraLayer;   // Bit shift the index of the layer to get a bit mask, This would cast rays only against colliders in layer cameraLayer.
     }
 
-    void Update() {
-        RaycastHit hit;
-
-        if (Physics.Raycast(transform.position, transform.TransformDirection(Vector3.forward), out hit, Mathf.Infinity, layerMask)) {
-            Debug.DrawRay(transform.position, transform.TransformDirection(Vector3.forward) * hit.distance, Color.yellow);
-            isDetectingCamera = true;
-        } else {
-            Debug.DrawRay(transform.position, transform.TransformDirection(Vector3.forward) * 1000, Color.white);
-            isDetectingCamera = false;
+    private void Update() {
+        if(particuleButtonIcon && particuleObjectIcon)
+        {
+            if (Physics.Raycast(transform.position, transform.TransformDirection(Vector3.forward), out RaycastHit hit,
+                Mathf.Infinity, layerMask))
+            {
+                Debug.DrawRay(transform.position, transform.TransformDirection(Vector3.forward) * hit.distance,
+                    Color.yellow);
+                isDetectingCamera = true;
+            }
+            else
+            {
+                Debug.DrawRay(transform.position, transform.TransformDirection(Vector3.forward) * 1000, Color.white);
+                isDetectingCamera = false;
+            }
         }
 
         if (isDetectingCamera) {
