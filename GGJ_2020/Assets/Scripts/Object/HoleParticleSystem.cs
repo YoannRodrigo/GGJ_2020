@@ -28,5 +28,9 @@ public class HoleParticleSystem : MonoBehaviour
         {
             Instantiate(objectToRemovePrefab, holeTransform.position, holeTransform.rotation, holeTransform);
         }
+
+        foreach (Transform hole in holeTransformList) {
+            hole.GetComponent<ParticleSystem>().Play();
+        }
     }
 }
