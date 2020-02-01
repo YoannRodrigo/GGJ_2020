@@ -1,5 +1,4 @@
-﻿using System;
-using System.Collections;
+﻿using System.Collections;
 using DG.Tweening;
 using UnityEngine;
 
@@ -27,6 +26,7 @@ public class ConveyerStopObject : MonoBehaviour
         if (objectToRepair != null)
         {
             objectToRepair.transform.DOMove(objectViewTransform.position, 1f).SetEase(Ease.OutExpo);
+            objectToRepair.tag = "ObjectToValidate";
             StartCoroutine(WaitForReset());
         }
     }
@@ -34,6 +34,7 @@ public class ConveyerStopObject : MonoBehaviour
     private IEnumerator WaitForReset()
     {
         yield return new WaitForSeconds(1f);
+        conveyerMove.canObjectBeMoved = true;
         objectToRepair = null;
     }
 }
