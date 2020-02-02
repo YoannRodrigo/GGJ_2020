@@ -51,6 +51,7 @@ public class SelectControler : MonoBehaviour
             {
                 currentIndex = framesPosition.Count - 1;
             }
+            AkSoundEngine.PostEvent("Fleches_directionnelles", Camera.main.gameObject);
         }
     }
 
@@ -64,6 +65,7 @@ public class SelectControler : MonoBehaviour
             {
                 currentIndex = 0;
             }
+            AkSoundEngine.PostEvent("Fleches_directionnelles", Camera.main.gameObject);
         }
     }
 }

@@ -1,6 +1,284 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{0D97209B-5DC1-4115-98D8-E794CAA6C986}" SchemaVersion="94">
 	<Events>
-		<WorkUnit Name="Default Work Unit" ID="{0D97209B-5DC1-4115-98D8-E794CAA6C986}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{0D97209B-5DC1-4115-98D8-E794CAA6C986}" PersistMode="Standalone">
+			<ChildrenList>
+				<Event Name="Drill" ID="{E9E87825-52F3-439A-A083-14A17C605D3A}">
+					<ChildrenList>
+						<Action Name="" ID="{DF46A232-BEEC-4BD0-9657-4876629176D8}" ShortID="371811192">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="drill" ID="{C04776C3-D23F-4F36-BA69-53561F9F2172}" WorkUnitID="{99394163-F1CA-416C-A834-61F2B601E76F}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Antenna" ID="{12B1A4EC-9918-426B-9698-AFCF25720AB1}">
+					<ChildrenList>
+						<Action Name="" ID="{EE1F5180-ED60-4C33-B05F-F682F181D2F7}" ShortID="657665671">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="antenna" ID="{3AA2A04B-B7B9-43DF-BBBA-AD5C68663784}" WorkUnitID="{99394163-F1CA-416C-A834-61F2B601E76F}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Banana" ID="{AE33E762-9481-4A7A-94C3-543FDEC2E4A6}">
+					<ChildrenList>
+						<Action Name="" ID="{85252ECF-5177-4098-8F0C-DE08DECB7378}" ShortID="834522601">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="banana" ID="{D6BEFFD1-B5D8-485B-9AF2-AAB4161D6807}" WorkUnitID="{99394163-F1CA-416C-A834-61F2B601E76F}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Bouchon" ID="{B24487D9-0C80-4AA2-8994-ECF42A4E1387}">
+					<ChildrenList>
+						<Action Name="" ID="{03856307-9FC4-4102-A871-CC3B3DB05868}" ShortID="162435980">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="bouchon" ID="{55226B60-46E8-40C1-B6B4-CD7DC76860B6}" WorkUnitID="{99394163-F1CA-416C-A834-61F2B601E76F}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Conveyor_Belt" ID="{2E1B8309-8287-43A3-8D5A-6BB21F2640E1}">
+					<ChildrenList>
+						<Action Name="" ID="{F0DC4B62-9018-4A95-B8E6-CD5B9F86C217}" ShortID="190450555">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="conveyor belt" ID="{05BBA63C-2289-4179-AF5C-DEF925171C23}" WorkUnitID="{99394163-F1CA-416C-A834-61F2B601E76F}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Corkcrew" ID="{3A3E7104-0208-4DBD-B211-9FD39A80BFCD}">
+					<ChildrenList>
+						<Action Name="" ID="{2002F976-9ADA-4EF3-BB25-677F7F532AFB}" ShortID="628437926">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="corkcrew" ID="{4E485F15-509F-40F0-A1A2-88D6D36CCD8D}" WorkUnitID="{99394163-F1CA-416C-A834-61F2B601E76F}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Crowbar" ID="{CD5B4D19-2B3B-4DAB-9064-87D451871B58}">
+					<ChildrenList>
+						<Action Name="" ID="{252CCE62-AF03-44F5-B8F1-194E7C472612}" ShortID="731305223">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="crowbar" ID="{9ED4D578-4919-46C4-A67C-9680B9F90C1C}" WorkUnitID="{99394163-F1CA-416C-A834-61F2B601E76F}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Fish" ID="{B032DF53-3EC0-4601-B0EE-A3AD16DADA9A}">
+					<ChildrenList>
+						<Action Name="" ID="{0C1E798A-568A-40D6-8EEA-FE16F3393EEF}" ShortID="488339543">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="fish" ID="{A320F15A-8C0F-41A4-93BF-2F52272EBFBF}" WorkUnitID="{99394163-F1CA-416C-A834-61F2B601E76F}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Fleches_directionnelles" ID="{BD028D04-C9FC-43C1-80F3-A69274597A86}">
+					<ChildrenList>
+						<Action Name="" ID="{1801A810-B84A-4F3E-BDA6-0E3F0DFA80B7}" ShortID="396202422">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="flèches directionnelles" ID="{3889B8C9-CF92-490E-98C9-2F663A43DDBB}" WorkUnitID="{99394163-F1CA-416C-A834-61F2B601E76F}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Hand" ID="{0C49983F-A123-4B83-97CA-7268D5EBF319}">
+					<ChildrenList>
+						<Action Name="" ID="{9B425679-F50A-45F3-80DE-2FBE8896AF11}" ShortID="987153360">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="hand" ID="{0845A953-0101-47B2-B09E-46200454FA75}" WorkUnitID="{99394163-F1CA-416C-A834-61F2B601E76F}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="LB_RB" ID="{6BD43BE3-A716-442C-95D5-6A85395D93A3}">
+					<ChildrenList>
+						<Action Name="" ID="{006F9804-DB9F-4066-8527-FF92705ADF45}" ShortID="370331661">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="LB_RB" ID="{996D3F7D-6BE6-4051-860E-5C5BEE120559}" WorkUnitID="{99394163-F1CA-416C-A834-61F2B601E76F}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Marteau" ID="{D9F148F4-6FA7-4359-AA5C-489ADDE0455E}">
+					<ChildrenList>
+						<Action Name="" ID="{276F0FDD-E59F-4569-9784-CC702B50D178}" ShortID="709682642">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="marteau" ID="{C1AD16DC-BDDE-42F2-AC7B-D6CF26196D0E}" WorkUnitID="{99394163-F1CA-416C-A834-61F2B601E76F}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Monkey" ID="{976A387C-75C0-4E96-A01A-B3D32E43125D}">
+					<ChildrenList>
+						<Action Name="" ID="{0ED8281D-04EC-4FF0-9F9B-1E78F135F9CE}" ShortID="297983213">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="monkey scream" ID="{89A43662-E7C8-4C47-AC93-D5019744987C}" WorkUnitID="{99394163-F1CA-416C-A834-61F2B601E76F}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Nail" ID="{2D0883FE-C1FF-4469-B7EC-BD1973B27E32}">
+					<ChildrenList>
+						<Action Name="" ID="{A411FDEA-7A5E-4C3E-A784-626814CCF5AA}" ShortID="1040599856">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="nail" ID="{30477119-31A9-4DF0-9411-C9440338FDF4}" WorkUnitID="{99394163-F1CA-416C-A834-61F2B601E76F}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Pliers" ID="{A58829D2-AFC5-412E-8B8C-BF934EE6131B}">
+					<ChildrenList>
+						<Action Name="" ID="{9C1E56F0-E894-4407-950A-03EF35B97416}" ShortID="1066619906">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="pliers" ID="{B47DABC7-C9C4-4469-88E4-E5E8AA627F3B}" WorkUnitID="{99394163-F1CA-416C-A834-61F2B601E76F}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Pshit" ID="{01239668-91E1-4C88-95EA-6CC42BB6C3DC}">
+					<ChildrenList>
+						<Action Name="" ID="{12927DCB-FF9D-4923-8E0B-DA4D070D93AA}" ShortID="910100650">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="pshitpshit" ID="{A785FB95-1421-4A95-A980-961376077FA3}" WorkUnitID="{99394163-F1CA-416C-A834-61F2B601E76F}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Saw" ID="{E5C00F5C-60C9-492D-8EE6-D0EE09938D7E}">
+					<ChildrenList>
+						<Action Name="" ID="{8806CA16-2797-4A4D-81B1-C8FFC4C3C76D}" ShortID="229852687">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="saw metal" ID="{BD71821C-3179-430F-ACCA-99F08C9604E5}" WorkUnitID="{99394163-F1CA-416C-A834-61F2B601E76F}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Scalpel" ID="{961656EC-7599-4A6C-8C89-82C79E360482}">
+					<ChildrenList>
+						<Action Name="" ID="{57B397EC-8D37-4993-82BA-B68D05793568}" ShortID="351761192">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="scalpel" ID="{D74409D9-0CF7-4D57-B3C4-E9B22113C9B4}" WorkUnitID="{99394163-F1CA-416C-A834-61F2B601E76F}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Scotch" ID="{31F22BEB-98D9-40B2-A21C-06BB89E27114}">
+					<ChildrenList>
+						<Action Name="" ID="{66CDB452-0CB1-4433-8392-C57DA07C14C8}" ShortID="889240173">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="scotch" ID="{29B0F9CA-C5BB-4DA4-BD83-8F07537ADF05}" WorkUnitID="{99394163-F1CA-416C-A834-61F2B601E76F}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Screw" ID="{BD08F16E-41ED-4158-A9C8-E31B43C9D393}">
+					<ChildrenList>
+						<Action Name="" ID="{041D6790-2197-4AAB-A1C2-2CBDB760EB7B}" ShortID="1055209019">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="screw" ID="{D9973F70-813F-436F-9791-A5B31AB5377B}" WorkUnitID="{99394163-F1CA-416C-A834-61F2B601E76F}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Screwdriver" ID="{07A8CBB6-AE0A-4F57-ABC1-89BD7C844E3E}">
+					<ChildrenList>
+						<Action Name="" ID="{C40CCFDD-3E67-4709-82E2-9748964D2FB1}" ShortID="356331224">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="screwdriver" ID="{780A5FAC-44DB-4875-A447-D669999B8834}" WorkUnitID="{99394163-F1CA-416C-A834-61F2B601E76F}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Sparadrap" ID="{05E67B5C-98E3-4473-93E1-E928807EB85E}">
+					<ChildrenList>
+						<Action Name="" ID="{738A9D90-ED6F-43FB-A439-9B148671448D}" ShortID="456922413">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="sparadrap" ID="{01384168-6076-48BA-8A3E-33271AF5478A}" WorkUnitID="{99394163-F1CA-416C-A834-61F2B601E76F}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Stain" ID="{AC418170-1EC1-4AD7-819D-DDA1428AB9DF}">
+					<ChildrenList>
+						<Action Name="" ID="{B46269ED-8465-4066-A043-3409E90A655D}" ShortID="494861413">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="stain" ID="{7FDC04B9-2D2E-4BA4-BD02-DE0D929D9D34}" WorkUnitID="{99394163-F1CA-416C-A834-61F2B601E76F}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Validation" ID="{ED43D17E-9CE3-4E4D-A2B8-CB39C23E200D}">
+					<ChildrenList>
+						<Action Name="" ID="{D0484D98-7328-407C-AA72-1C8EF7140B85}" ShortID="751022608">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="validation" ID="{3F0E2255-55B8-41F4-8956-9ADAF82AD064}" WorkUnitID="{99394163-F1CA-416C-A834-61F2B601E76F}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Bouton" ID="{6C128623-972B-4033-9D1C-DBB3240AE76C}">
+					<ChildrenList>
+						<Action Name="" ID="{985CA973-FC68-411B-A06C-336800871004}" ShortID="113068411">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="bouton" ID="{501C0727-30BD-4FC0-A988-27B0C839B48E}" WorkUnitID="{99394163-F1CA-416C-A834-61F2B601E76F}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+			</ChildrenList>
+		</WorkUnit>
 	</Events>
 </WwiseDocument>

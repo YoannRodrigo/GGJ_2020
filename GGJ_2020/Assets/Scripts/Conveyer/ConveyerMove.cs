@@ -1,5 +1,6 @@
 ﻿#region
 
+using System;
 using UnityEngine;
 
 #endregion
@@ -15,6 +16,14 @@ public class ConveyerMove : MonoBehaviour
             canObjectBeMoved)
         {
             other.transform.Translate(CONVEYER_SPEED, 0, 0);
+        }
+    }
+
+    private void OnCollisionEnter(Collision other)
+    {
+        if (other.transform.CompareTag("ObjectToRepair") || other.transform.CompareTag("ObjectToValidate"))
+        {
+            AkSoundEngine.PostEvent("Conveyor_Belt", Camera.main.gameObject);
         }
     }
 }

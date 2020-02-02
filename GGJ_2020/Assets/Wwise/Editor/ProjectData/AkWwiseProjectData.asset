@@ -31,15 +31,312 @@ MonoBehaviour:
     ParentPhysicalPath: 
     guid: 1c613f6a46dbdf45b825aa959dce92bf
     GuidInternal: 
-    m_lastTime: -8586211064927157053
-    List: []
+    m_lastTime: -8586209761575443005
+    List:
+    - name: main
+      guid: 45d9eaa4ca82134ea8fa2dbfe60127f3
+      id: 3161908922
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: main
+        ObjectType: 7
+      Path: Default Work Unit\main
   EventWwu:
   - PhysicalPath: Events\Default Work Unit.wwu
     ParentPhysicalPath: 
     guid: 9b20970dc15d154198d8e794caa6c986
     GuidInternal: 
-    m_lastTime: -8586211064927815285
-    List: []
+    m_lastTime: -8586209761580951072
+    List:
+    - name: Antenna
+      guid: eca4b11218996b429698afcf25720ab1
+      id: 1855058110
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Antenna
+        ObjectType: 3
+      Path: Default Work Unit\Antenna
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Banana
+      guid: 62e733ae81947a4a94c3543fdec2e4a6
+      id: 3933301714
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Banana
+        ObjectType: 3
+      Path: Default Work Unit\Banana
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Bouchon
+      guid: d98744b2800ca24a8994ecf42a4e1387
+      id: 2948712071
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Bouchon
+        ObjectType: 3
+      Path: Default Work Unit\Bouchon
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Conveyor_Belt
+      guid: 09831b2e8782a3438d5a6bb21f2640e1
+      id: 1481508790
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Conveyor_Belt
+        ObjectType: 3
+      Path: Default Work Unit\Conveyor_Belt
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Corkcrew
+      guid: 04713e3a0802bd4db2119fd39a80bfcd
+      id: 26926625
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Corkcrew
+        ObjectType: 3
+      Path: Default Work Unit\Corkcrew
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Crowbar
+      guid: 194d5bcd3b2bab4d906487d451871b58
+      id: 1837441319
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Crowbar
+        ObjectType: 3
+      Path: Default Work Unit\Crowbar
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Drill
+      guid: 2578e8e9f3529a43a08314a17c605d3a
+      id: 2168413864
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Drill
+        ObjectType: 3
+      Path: Default Work Unit\Drill
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Fish
+      guid: 53df32b0c03e0146b0eea3ad16dada9a
+      id: 2695658327
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Fish
+        ObjectType: 3
+      Path: Default Work Unit\Fish
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Fleches_directionnelles
+      guid: 048d02bdfcc9c14380f3a69274597a86
+      id: 3848107264
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Fleches_directionnelles
+        ObjectType: 3
+      Path: Default Work Unit\Fleches_directionnelles
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Hand
+      guid: 3f98490c23a1834b97ca7268d5ebf319
+      id: 3666971986
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Hand
+        ObjectType: 3
+      Path: Default Work Unit\Hand
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: LB_RB
+      guid: e33bd46b16a72c4495d56a85395d93a3
+      id: 809474474
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: LB_RB
+        ObjectType: 3
+      Path: Default Work Unit\LB_RB
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Marteau
+      guid: f448f1d9a76f5943aa5c489adde0455e
+      id: 3932397148
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Marteau
+        ObjectType: 3
+      Path: Default Work Unit\Marteau
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Monkey
+      guid: 7c386a97c075964ea01ab3d32e43125d
+      id: 3948471538
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Monkey
+        ObjectType: 3
+      Path: Default Work Unit\Monkey
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Nail
+      guid: fe83082dffc16944b7ecbd1973b27e32
+      id: 864764337
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Nail
+        ObjectType: 3
+      Path: Default Work Unit\Nail
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Pliers
+      guid: d22988a5c5af2e418b8cbf934ee6131b
+      id: 2779631002
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Pliers
+        ObjectType: 3
+      Path: Default Work Unit\Pliers
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Pshit
+      guid: 68962301e191884c95ea6cc42bb6c3dc
+      id: 3319001673
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Pshit
+        ObjectType: 3
+      Path: Default Work Unit\Pshit
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Saw
+      guid: 5c0fc0e5c9602d498ee6d0ee09938d7e
+      id: 443572616
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Saw
+        ObjectType: 3
+      Path: Default Work Unit\Saw
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Scalpel
+      guid: ec56169699756c4a8c8982c79e360482
+      id: 2637934307
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Scalpel
+        ObjectType: 3
+      Path: Default Work Unit\Scalpel
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Scotch
+      guid: eb2bf231d998b240a21c06bb89e27114
+      id: 3189580687
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Scotch
+        ObjectType: 3
+      Path: Default Work Unit\Scotch
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Screw
+      guid: 6ef108bded415841a9c8e31b43c9d393
+      id: 2316462023
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Screw
+        ObjectType: 3
+      Path: Default Work Unit\Screw
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Screwdriver
+      guid: b6cba8070aae574fabc189bd7c844e3e
+      id: 1958283141
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Screwdriver
+        ObjectType: 3
+      Path: Default Work Unit\Screwdriver
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Sparadrap
+      guid: 5c7be605e398734493e1e928807eb85e
+      id: 3492049339
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Sparadrap
+        ObjectType: 3
+      Path: Default Work Unit\Sparadrap
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Stain
+      guid: 708141acc11ed74a819ddda1428ab9df
+      id: 1164367376
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Stain
+        ObjectType: 3
+      Path: Default Work Unit\Stain
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Validation
+      guid: 7ed143ede39c4d4ea2b8cb39c23e200d
+      id: 1719053472
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Validation
+        ObjectType: 3
+      Path: Default Work Unit\Validation
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
   RtpcWwu:
   - PhysicalPath: Game Parameters\Default Work Unit.wwu
     ParentPhysicalPath: 
