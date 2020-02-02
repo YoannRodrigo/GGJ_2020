@@ -285,10 +285,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fc2f57491cdea5b4d8518f7dcfa251c7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  difficulty: 1
   holeTransformList: []
   objectToRemovePrefab: {fileID: 1684122739739451992, guid: b6c0c1d2fb96a0c4fba2219487a9f297,
     type: 3}
-  maxHoles: 3
 --- !u!1 &4126561378842230151
 GameObject:
   m_ObjectHideFlags: 0
@@ -562,7 +562,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 229e5b5d7eec21b41b0f1c4ba5b72ec8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  difficulty: 0
+  difficulty: 1
   childTransform: {fileID: 3832884440058957892}
 --- !u!65 &6666514789453961836
 BoxCollider:
@@ -589,3 +589,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8afec8309da907646a991d708c6b1ce4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isRepared: 0
