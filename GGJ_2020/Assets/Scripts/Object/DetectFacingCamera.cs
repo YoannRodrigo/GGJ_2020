@@ -131,6 +131,18 @@ public class DetectFacingCamera : MonoBehaviour {
             mainObject.DeleteObjectInDic(objectToRemove);
             objectToRemove.transform.DOLocalMoveZ(distanceRemove, 1f).OnComplete(() => Destroy(gameObject));
         }
+
+        if (objectToRemove.CompareTag("ObjectToAdd") && gameManager.IsRightActive() && gameManager.GetCurrentRightTool().Contains(name))
+        {
+            mainObject.DeleteObjectInDic(objectToRemove);
+            GameObject newItem = GetComponent<AddObjectAndIcone>().SpawnItemToAdd();
+            newItem.transform.DOMove(transform.position, 1f).OnComplete(() =>
+            {
+                Destroy(objectToRemove.gameObject);
+                Destroy(currentIconeButton.gameObject);
+                Destroy(this);
+            });
+        }
     }
 
     private void ShowIcons() {
@@ -164,19 +176,10 @@ public class DetectFacingCamera : MonoBehaviour {
                     throw new ArgumentOutOfRangeException();
             }
         }
-
-        if (!gameObjectNeedTobeRemoved)
-        {
-            objectToRemove.SetActive(true);
-        }
     }
 
     private void HideIcons() 
     { 
         Destroy(currentIconeButton);
-        if (!gameObjectNeedTobeRemoved)
-        {
-            objectToRemove.SetActive(false);
-        }
     }
 }
