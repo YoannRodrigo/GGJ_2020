@@ -1,0 +1,52 @@
+Event	ID	Name			Wwise Object Path	Notes
+	26926625	Corkcrew			\Default Work Unit\Corkcrew	
+	443572616	Saw			\Default Work Unit\Saw	
+	809474474	LB_RB			\Default Work Unit\LB_RB	
+	864764337	Nail			\Default Work Unit\Nail	
+	1164367376	Stain			\Default Work Unit\Stain	
+	1481508790	Conveyor_Belt			\Default Work Unit\Conveyor_Belt	
+	1719053472	Validation			\Default Work Unit\Validation	
+	1837441319	Crowbar			\Default Work Unit\Crowbar	
+	1855058110	Antenna			\Default Work Unit\Antenna	
+	1958283141	Screwdriver			\Default Work Unit\Screwdriver	
+	2168413864	Drill			\Default Work Unit\Drill	
+	2316462023	Screw			\Default Work Unit\Screw	
+	2637934307	Scalpel			\Default Work Unit\Scalpel	
+	2695658327	Fish			\Default Work Unit\Fish	
+	2779631002	Pliers			\Default Work Unit\Pliers	
+	2948712071	Bouchon			\Default Work Unit\Bouchon	
+	3189580687	Scotch			\Default Work Unit\Scotch	
+	3319001673	Pshit			\Default Work Unit\Pshit	
+	3492049339	Sparadrap			\Default Work Unit\Sparadrap	
+	3666971986	Hand			\Default Work Unit\Hand	
+	3848107264	Fleches_directionnelles			\Default Work Unit\Fleches_directionnelles	
+	3932397148	Marteau			\Default Work Unit\Marteau	
+	3933301714	Banana			\Default Work Unit\Banana	
+	3948471538	Monkey			\Default Work Unit\Monkey	
+
+In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	88240697	nail	D:\Mes Documents\GGJ_2020\GGJ_2020\GGJ_2020\GGJ_2020_WwiseProject\.cache\Windows\SFX\nail_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\nail		308800
+	123911089	corkcrew	D:\Mes Documents\GGJ_2020\GGJ_2020\GGJ_2020\GGJ_2020_WwiseProject\.cache\Windows\SFX\corkcrew_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\corkcrew		447040
+	138279347	screw	D:\Mes Documents\GGJ_2020\GGJ_2020\GGJ_2020\GGJ_2020_WwiseProject\.cache\Windows\SFX\screw_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\screw		244288
+	253921428	bouchon	D:\Mes Documents\GGJ_2020\GGJ_2020\GGJ_2020\GGJ_2020_WwiseProject\.cache\Windows\SFX\bouchon_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\bouchon		83008
+	261009503	pshitpshit	D:\Mes Documents\GGJ_2020\GGJ_2020\GGJ_2020\GGJ_2020_WwiseProject\.cache\Windows\SFX\pshitpshit_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\pshitpshit		161344
+	326123440	scalpel	D:\Mes Documents\GGJ_2020\GGJ_2020\GGJ_2020\GGJ_2020_WwiseProject\.cache\Windows\SFX\scalpel_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\scalpel		110656
+	423399962	validation	D:\Mes Documents\GGJ_2020\GGJ_2020\GGJ_2020\GGJ_2020_WwiseProject\.cache\Windows\SFX\validation_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\validation		75992
+	447953917	banana	D:\Mes Documents\GGJ_2020\GGJ_2020\GGJ_2020\GGJ_2020_WwiseProject\.cache\Windows\SFX\banana_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\banana		39232
+	451225214	marteau	D:\Mes Documents\GGJ_2020\GGJ_2020\GGJ_2020\GGJ_2020_WwiseProject\.cache\Windows\SFX\marteau_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\marteau		258112
+	533370281	antenna	D:\Mes Documents\GGJ_2020\GGJ_2020\GGJ_2020\GGJ_2020_WwiseProject\.cache\Windows\SFX\antenna_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\antenna		230464
+	606025091	pliers	D:\Mes Documents\GGJ_2020\GGJ_2020\GGJ_2020\GGJ_2020_WwiseProject\.cache\Windows\SFX\pliers_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\pliers		126784
+	634756674	conveyor belt	D:\Mes Documents\GGJ_2020\GGJ_2020\GGJ_2020\GGJ_2020_WwiseProject\.cache\Windows\SFX\conveyor belt_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\conveyor belt		188992
+	641834889	LB_RB	D:\Mes Documents\GGJ_2020\GGJ_2020\GGJ_2020\GGJ_2020_WwiseProject\.cache\Windows\SFX\LB_RB_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\LB_RB		36928
+	669910624	saw metal	D:\Mes Documents\GGJ_2020\GGJ_2020\GGJ_2020\GGJ_2020_WwiseProject\.cache\Windows\SFX\saw metal_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\saw metal		161344
+	687476913	hand	D:\Mes Documents\GGJ_2020\GGJ_2020\GGJ_2020\GGJ_2020_WwiseProject\.cache\Windows\SFX\hand_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\hand		73792
+	688593885	fish	D:\Mes Documents\GGJ_2020\GGJ_2020\GGJ_2020\GGJ_2020_WwiseProject\.cache\Windows\SFX\fish_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\fish		142912
+	710174251	drill	D:\Mes Documents\GGJ_2020\GGJ_2020\GGJ_2020\GGJ_2020_WwiseProject\.cache\Windows\SFX\drill_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\drill		396352
+	846969950	monkey scream	D:\Mes Documents\GGJ_2020\GGJ_2020\GGJ_2020\GGJ_2020_WwiseProject\.cache\Windows\SFX\monkey scream_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\monkey scream		55360
+	856549987	sparadrap	D:\Mes Documents\GGJ_2020\GGJ_2020\GGJ_2020\GGJ_2020_WwiseProject\.cache\Windows\SFX\sparadrap_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\sparadrap		119872
+	870091873	screwdriver	D:\Mes Documents\GGJ_2020\GGJ_2020\GGJ_2020\GGJ_2020_WwiseProject\.cache\Windows\SFX\screwdriver_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\screwdriver		322624
+	981346042	crowbar	D:\Mes Documents\GGJ_2020\GGJ_2020\GGJ_2020\GGJ_2020_WwiseProject\.cache\Windows\SFX\crowbar_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\crowbar		262720
+	998273586	stain	D:\Mes Documents\GGJ_2020\GGJ_2020\GGJ_2020\GGJ_2020_WwiseProject\.cache\Windows\SFX\stain_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\stain		129088
+	1013410684	flèches directionnelles	D:\Mes Documents\GGJ_2020\GGJ_2020\GGJ_2020\GGJ_2020_WwiseProject\.cache\Windows\SFX\flèches directionnelles_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\flèches directionnelles		16192
+	1048901683	scotch	D:\Mes Documents\GGJ_2020\GGJ_2020\GGJ_2020\GGJ_2020_WwiseProject\.cache\Windows\SFX\scotch_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\scotch		179776
+
