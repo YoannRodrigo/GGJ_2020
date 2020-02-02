@@ -1,5 +1,6 @@
 ﻿#region
 
+using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -61,8 +62,8 @@ public class ScoreSystem : GenericSingleton<ScoreSystem>
 
     #region VARIABLES
 
-    public Text TimeTextField;
-    public Text ScoreTextField;
+    public TextMeshProUGUI TimeTextField;
+    public TextMeshProUGUI ScoreTextField;
 
     private static int score;
     private float timeSinceObjectInFront;
