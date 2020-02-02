@@ -182,25 +182,25 @@ public class DetectFacingCamera : MonoBehaviour
             {
                 case Repair.Inputs.SOUTH:
                     currentIconeButton = Instantiate(iconesButton[0],
-                        particuleButtonIcon.position + 0.1f * particuleButtonIcon.forward,
+                        particuleButtonIcon.position + 0.03f * particuleButtonIcon.forward,
                         particuleButtonIcon.rotation,
                         particuleButtonIcon);
                     break;
                 case Repair.Inputs.WEST:
                     currentIconeButton = Instantiate(iconesButton[1],
-                        particuleButtonIcon.position + 0.1f * particuleButtonIcon.forward,
+                        particuleButtonIcon.position + 0.03f * particuleButtonIcon.forward,
                         particuleButtonIcon.rotation,
                         particuleButtonIcon);
                     break;
                 case Repair.Inputs.NORTH:
                     currentIconeButton = Instantiate(iconesButton[2],
-                        particuleButtonIcon.position + 0.1f * particuleButtonIcon.forward,
+                        particuleButtonIcon.position + 0.03f * particuleButtonIcon.forward,
                         particuleButtonIcon.rotation,
                         particuleButtonIcon);
                     break;
                 case Repair.Inputs.EAST:
                     currentIconeButton = Instantiate(iconesButton[3],
-                        particuleButtonIcon.position + 0.1f * particuleButtonIcon.forward,
+                        particuleButtonIcon.position + 0.03f * particuleButtonIcon.forward,
                         particuleButtonIcon.rotation,
                         particuleButtonIcon);
                     break;
