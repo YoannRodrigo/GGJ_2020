@@ -9660,7 +9660,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   TimeTextField: {fileID: 1994957770}
   ScoreTextField: {fileID: 330469079}
-  timeLapsed: 0
+  freezeTime: 0
+  timeIsFrozen: 0
   conveyerStopObject: {fileID: 493288076}
 --- !u!4 &210791247
 Transform:
@@ -29713,7 +29714,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   objectsToSpawn:
-  - {fileID: 5874145831946665548, guid: 4c30cc46fc3d6884aae3087adc4fae76, type: 3}
+  - {fileID: 639601863376046546, guid: 4c30cc46fc3d6884aae3087adc4fae76, type: 3}
   spawnPoint: {fileID: 401126597}
 --- !u!65 &1946431633
 BoxCollider:

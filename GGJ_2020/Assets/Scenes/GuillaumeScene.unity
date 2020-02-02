@@ -233,11 +233,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   objectsToSpawn:
-  - {fileID: 2929493605890653152, guid: e682c4fcc3715ab45b83f3a9a5bda30a, type: 3}
-  - {fileID: 5874145831946665548, guid: 4c30cc46fc3d6884aae3087adc4fae76, type: 3}
-  - {fileID: 2601520473941710582, guid: c0071706cb6b6ab43ac9d68afe4f464a, type: 3}
-  - {fileID: 6912544043736283436, guid: c6cd1618e156a50498dd84d694a41fe1, type: 3}
-  - {fileID: 1448516797355636046, guid: f434cf6ffe20b3f4686b8b788953e015, type: 3}
+  - {fileID: 2851468813814811050, guid: e682c4fcc3715ab45b83f3a9a5bda30a, type: 3}
+  - {fileID: 639601863376046546, guid: 4c30cc46fc3d6884aae3087adc4fae76, type: 3}
+  - {fileID: 8330719884909149849, guid: c0071706cb6b6ab43ac9d68afe4f464a, type: 3}
+  - {fileID: 6666514789453961838, guid: c6cd1618e156a50498dd84d694a41fe1, type: 3}
+  - {fileID: 8943119280930989554, guid: f434cf6ffe20b3f4686b8b788953e015, type: 3}
   spawnPoint: {fileID: 1196273219}
 --- !u!114 &150062717
 MonoBehaviour:
@@ -705,8 +705,8 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 50.835037, y: 28.003708, z: 1.0000001}
-  m_Center: {x: -3.7632217, y: -1.0370369, z: 0.000000014846449}
+  m_Size: {x: 4.828003, y: 1.8742075, z: 1.0000001}
+  m_Center: {x: 0.157969, y: 0.18409643, z: 0.0000042293013}
 --- !u!1 &1196273218
 GameObject:
   m_ObjectHideFlags: 0
@@ -796,7 +796,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   conveyerMove: {fileID: 150062717}
   objectViewTransform: {fileID: 1455624640}
-  scoreSystem: {fileID: 0}
 --- !u!1 &1360416771
 GameObject:
   m_ObjectHideFlags: 0
@@ -894,7 +893,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1455624639}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -0.34, z: 2.74}
+  m_LocalPosition: {x: -0.028, y: 0.034, z: 1.202}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 963194228}

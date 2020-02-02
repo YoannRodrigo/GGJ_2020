@@ -72,5 +72,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Sparadras
       objectReference: {fileID: 0}
+    - target: {fileID: -927199367670048503, guid: 5de5ba9678a0eca428d91a5c2ddc0efd,
+        type: 3}
+      propertyPath: m_TagString
+      value: ObjectToRemove
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5de5ba9678a0eca428d91a5c2ddc0efd, type: 3}
