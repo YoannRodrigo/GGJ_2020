@@ -98,7 +98,7 @@ public class DetectFacingCamera : MonoBehaviour
             }
         }
 
-        if (Input.GetButtonDown("Fire1"))
+        if (Input.GetButtonDown("A"))
         {
             if (mainObject.objectsToRemoveDic.ContainsKey(objectToRemove))
             {
@@ -109,7 +109,7 @@ public class DetectFacingCamera : MonoBehaviour
                 }
             }
         }
-        else if (Input.GetButtonDown("Fire3"))
+        else if (Input.GetButtonDown("X"))
         {
             if (mainObject.objectsToRemoveDic.ContainsKey(objectToRemove))
             {
@@ -120,7 +120,7 @@ public class DetectFacingCamera : MonoBehaviour
                 }
             }
         }
-        else if (Input.GetButtonDown("Jump"))
+        else if (Input.GetButtonDown("Y"))
         {
             if (mainObject.objectsToRemoveDic.ContainsKey(objectToRemove))
             {
@@ -131,7 +131,7 @@ public class DetectFacingCamera : MonoBehaviour
                 }
             }
         }
-        else if (Input.GetButtonDown("Fire2"))
+        else if (Input.GetButtonDown("B"))
         {
             if (mainObject.objectsToRemoveDic.ContainsKey(objectToRemove))
             {
@@ -182,25 +182,25 @@ public class DetectFacingCamera : MonoBehaviour
             {
                 case Repair.Inputs.SOUTH:
                     currentIconeButton = Instantiate(iconesButton[0],
-                        particuleButtonIcon.position + 0.1f * particuleButtonIcon.forward,
+                        particuleButtonIcon.position + 0.03f * particuleButtonIcon.forward,
                         particuleButtonIcon.rotation,
                         particuleButtonIcon);
                     break;
                 case Repair.Inputs.WEST:
                     currentIconeButton = Instantiate(iconesButton[1],
-                        particuleButtonIcon.position + 0.1f * particuleButtonIcon.forward,
+                        particuleButtonIcon.position + 0.03f * particuleButtonIcon.forward,
                         particuleButtonIcon.rotation,
                         particuleButtonIcon);
                     break;
                 case Repair.Inputs.NORTH:
                     currentIconeButton = Instantiate(iconesButton[2],
-                        particuleButtonIcon.position + 0.1f * particuleButtonIcon.forward,
+                        particuleButtonIcon.position + 0.03f * particuleButtonIcon.forward,
                         particuleButtonIcon.rotation,
                         particuleButtonIcon);
                     break;
                 case Repair.Inputs.EAST:
                     currentIconeButton = Instantiate(iconesButton[3],
-                        particuleButtonIcon.position + 0.1f * particuleButtonIcon.forward,
+                        particuleButtonIcon.position + 0.03f * particuleButtonIcon.forward,
                         particuleButtonIcon.rotation,
                         particuleButtonIcon);
                     break;

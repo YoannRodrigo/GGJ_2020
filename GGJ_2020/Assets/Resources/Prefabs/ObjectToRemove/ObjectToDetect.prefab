@@ -44,24 +44,24 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5ce974d022e7eff46bae4d2dbe6b9975, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  objectsToAdd:
+  - {fileID: 6735632849305812457, guid: 4d1a900a87cd5a24aab43e53ce6afa39, type: 3}
+  - {fileID: 4699032315896034101, guid: 916fa809ff9e36048b1291605250a6f9, type: 3}
+  - {fileID: 353989134691681014, guid: d27212fbd1b8ba54aa52c9debe96da2c, type: 3}
+  - {fileID: 4125831817238044928, guid: abf2ba75c77505f47b4665472bf8999d, type: 3}
+  - {fileID: 4255703728379958601, guid: c5c530f39fa18754da9b5cdf831ad0d6, type: 3}
+  - {fileID: 7834579086607134015, guid: e55c3928f464ef343854c6acd22d1069, type: 3}
+  - {fileID: 2481914120868781787, guid: bb68dd3bae6fc60498430fcfce8e1b6c, type: 3}
+  - {fileID: 5489286885564806449, guid: 0cc8c02916a7b1445bccfe8ed2dced86, type: 3}
   objectsToRemove:
   - {fileID: 4704164180902998376, guid: 3842721a903e8814a93ea98e2fd9e479, type: 3}
   - {fileID: 8028842495834335285, guid: cc3a9f78d5f8b364289120f5b00d0d1d, type: 3}
   - {fileID: 2056125526728458131, guid: 3e8f15be21d32334aa16738210735422, type: 3}
   - {fileID: 8023254251423767027, guid: d654d2e9563d0c04d815c6e578792223, type: 3}
-  - {fileID: 2056125526728458131, guid: 3e8f15be21d32334aa16738210735422, type: 3}
+  - {fileID: 2009475065054027241, guid: 118983410777a484d8e7e902994de123, type: 3}
   - {fileID: 8147165296825002272, guid: 2821f9c4c591ba0489225bf494d4bc56, type: 3}
   - {fileID: 2959712508025534004, guid: 0cb207bd531966c4f86b7087658430ad, type: 3}
   - {fileID: 1856564470008200551, guid: d9f10aaa00e8bf240b591282dc6a5852, type: 3}
-  objectsToAdd:
-  - {fileID: 5151824120766930617, guid: 4d1a900a87cd5a24aab43e53ce6afa39, type: 3}
-  - {fileID: 1393416080383807541, guid: 916fa809ff9e36048b1291605250a6f9, type: 3}
-  - {fileID: 1799401858935919987, guid: d27212fbd1b8ba54aa52c9debe96da2c, type: 3}
-  - {fileID: 6132395141696560901, guid: abf2ba75c77505f47b4665472bf8999d, type: 3}
-  - {fileID: 3519304932609843474, guid: c5c530f39fa18754da9b5cdf831ad0d6, type: 3}
-  - {fileID: 1399823925456737385, guid: e55c3928f464ef343854c6acd22d1069, type: 3}
-  - {fileID: 3782854280567020034, guid: bb68dd3bae6fc60498430fcfce8e1b6c, type: 3}
-  - {fileID: 3854061524392499753, guid: 0cc8c02916a7b1445bccfe8ed2dced86, type: 3}
 --- !u!114 &1684122739739451995
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -75,12 +75,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cameraLayer: 8
+  distanceRemove: 1
   iconesButton:
   - {fileID: 34738635855327646, guid: bbf2cb7b5f1ec10409bf96b96bb3c90a, type: 3}
-  - {fileID: 8653482297213498423, guid: d37c2393f8af57341a1e263ae3471d66, type: 3}
   - {fileID: 4835494726748753637, guid: 9f575a9283baeb946a1e4005de050e7c, type: 3}
   - {fileID: 4719136295200422960, guid: 5df25ff15c2c5794f923e905c59808d6, type: 3}
+  - {fileID: 8653482297213498423, guid: d37c2393f8af57341a1e263ae3471d66, type: 3}
+  objectToRemove: {fileID: 0}
   particuleButtonIcon: {fileID: 0}
   particuleObjectIcon: {fileID: 0}
-  objectToRemove: {fileID: 0}
-  distanceRemove: 1
