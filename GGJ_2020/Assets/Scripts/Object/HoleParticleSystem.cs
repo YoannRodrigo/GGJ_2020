@@ -1,22 +1,16 @@
-﻿using System;
-using System.Collections;
+﻿#region
+
+using System;
 using System.Collections.Generic;
 using UnityEngine;
 using Random = UnityEngine.Random;
 
+#endregion
+
 public class HoleParticleSystem : MonoBehaviour
 {
-    #region Variables
-    
-    public ObjectDifficulty difficulty;
-    [SerializeField]
-    private List<Transform> holeTransformList = new List<Transform>();
-    private HashSet<int> indexAlreadyChosen = new HashSet<int>();
-    [SerializeField] private GameObject objectToRemovePrefab;
-    private int maxHoles;
-    #endregion
-
-    private void Awake() {
+    private void Awake()
+    {
         switch (difficulty)
         {
             case ObjectDifficulty.easy:
@@ -25,15 +19,18 @@ public class HoleParticleSystem : MonoBehaviour
             case ObjectDifficulty.normal:
                 maxHoles = Random.Range(4, 6);
                 break;
-            case ObjectDifficulty.hard :
+            case ObjectDifficulty.hard:
                 maxHoles = Random.Range(6, 8);
                 break;
             default:
                 throw new ArgumentOutOfRangeException();
         }
-        for (int i = 0; i <= maxHoles; i++) {
+
+        for (int i = 0; i <= maxHoles; i++)
+        {
             int randomChildIndex = Random.Range(0, transform.childCount);
-            while (indexAlreadyChosen.Contains(randomChildIndex)) {
+            while (indexAlreadyChosen.Contains(randomChildIndex))
+            {
                 randomChildIndex = Random.Range(0, transform.childCount);
             }
 
@@ -43,10 +40,22 @@ public class HoleParticleSystem : MonoBehaviour
 
         FindObjectOfType<GameCanvasManager>().currentNbHoleMax = maxHoles;
         FindObjectOfType<GameCanvasManager>().currentNbHoleFix = 0;
-        
+
         foreach (Transform holeTransform in holeTransformList)
         {
             Instantiate(objectToRemovePrefab, holeTransform.position, holeTransform.rotation, holeTransform);
         }
     }
+
+    #region Variables
+
+    public ObjectDifficulty difficulty;
+
+    [SerializeField] private List<Transform> holeTransformList = new List<Transform>();
+
+    private readonly HashSet<int> indexAlreadyChosen = new HashSet<int>();
+    [SerializeField] private GameObject objectToRemovePrefab;
+    private int maxHoles;
+
+    #endregion
 }

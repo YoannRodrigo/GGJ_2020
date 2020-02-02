@@ -1,4 +1,5 @@
-﻿public enum ObjectDifficulty {
+﻿public enum ObjectDifficulty
+{
     easy,
     normal,
     hard

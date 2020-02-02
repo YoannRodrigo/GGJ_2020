@@ -1,12 +1,14 @@
-﻿using System.Collections;
-using System.Collections.Generic;
+﻿#region
+
 using UnityEngine;
+
+#endregion
 
 public class Bonus : MonoBehaviour
 {
     private int oldScore;
 
-    private void Update() {
-        
+    private void Update()
+    {
     }
 }

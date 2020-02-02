@@ -1,4 +1,8 @@
-﻿using UnityEngine;
+﻿#region
+
+using UnityEngine;
+
+#endregion
 
 public class ConveyerDestroyObject : MonoBehaviour
 {
@@ -6,9 +10,11 @@ public class ConveyerDestroyObject : MonoBehaviour
     {
         if (other.CompareTag("ObjectToRepair") || other.CompareTag("ObjectToValidate"))
         {
-            if (other.GetComponent<Repair>().isRepared) {
-                Debug.Log("gagne bonus");   //bonus fonction
+            if (other.GetComponent<Repair>().isRepared)
+            {
+                Debug.Log("gagne bonus"); //bonus fonction
             }
+
             Destroy(other.gameObject);
         }
     }

@@ -1,14 +1,25 @@
-﻿using System.Collections;
+﻿#region
+
+using System.Collections;
 using DG.Tweening;
 using UnityEngine;
 
+#endregion
+
 public class ConveyerStopObject : MonoBehaviour
 {
-    private GameObject objectToRepair;
-    [SerializeField] private ConveyerMove conveyerMove;
-    [SerializeField] private Transform objectViewTransform;
-    private bool isFocused;
     private bool canObjectBeMoved = true;
+    [SerializeField] private ConveyerMove conveyerMove;
+    private bool isFocused;
+    private GameObject objectToRepair;
+    [SerializeField] private Transform objectViewTransform;
+
+    public bool IsFocused
+    {
+        get => isFocused;
+
+        set => isFocused = value;
+    }
 
     private void OnTriggerEnter(Collider other)
     {
@@ -19,9 +30,9 @@ public class ConveyerStopObject : MonoBehaviour
             objectToRepair.GetComponent<RotateObject>().enabled = true;
             objectToRepair.GetComponent<Rigidbody>().useGravity = false;
             objectToRepair.GetComponent<Rigidbody>().isKinematic = true;
-            Debug.DrawLine(objectViewTransform.position,objectToRepair.transform.position
-                ,Color.blue,10);
-            
+            Debug.DrawLine(objectViewTransform.position, objectToRepair.transform.position
+                , Color.blue, 10);
+
             isFocused = true;
         }
     }
@@ -30,11 +41,12 @@ public class ConveyerStopObject : MonoBehaviour
     {
         if (objectToRepair != null)
         {
-            if(canObjectBeMoved)
+            if (canObjectBeMoved)
             {
                 canObjectBeMoved = false;
                 objectToRepair.transform.DOMove(objectViewTransform.position, 1f).SetEase(Ease.OutExpo);
             }
+
             objectToRepair.tag = "ObjectToValidate";
             StartCoroutine(WaitForReset());
         }
@@ -46,15 +58,5 @@ public class ConveyerStopObject : MonoBehaviour
         conveyerMove.canObjectBeMoved = true;
         objectToRepair = null;
         canObjectBeMoved = true;
-    }
-
-    public bool IsFocused {
-        get {
-            return isFocused;
-        }
-
-        set {
-            isFocused = value;
-        }
     }
 }

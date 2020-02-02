@@ -1,23 +1,26 @@
-﻿using System;
-using System.Collections;
-using System.Collections.Concurrent;
+﻿#region
+
 using System.Collections.Generic;
 using UnityEngine;
 
+#endregion
+
 public class SelectControler : MonoBehaviour
 {
-    public List<Transform> framesPosition = new List<Transform>();
-    private List<string> objectToolNamesRemove = new List<string>(9) {"Plug","Nail","Button","Stain","Flipper","Antenna","Screw","Banana", "Sparadras"};
-    private string currentTool;
-    private int currentIndex;
     public bool canbeMoved;
+    private int currentIndex;
+    private string currentTool;
+    public List<Transform> framesPosition = new List<Transform>();
     private bool isPositionReset = true;
+
+    private readonly List<string> objectToolNamesRemove = new List<string>(9)
+        {"Plug", "Nail", "Button", "Stain", "Flipper", "Antenna", "Screw", "Banana", "Sparadras"};
 
     public string GetCurrentTool()
     {
         return currentTool;
     }
-    
+
     private void Update()
     {
         float x = Input.GetAxis("VerticalSelect");
@@ -33,10 +36,9 @@ public class SelectControler : MonoBehaviour
         {
             isPositionReset = true;
         }
-        
+
         transform.position = framesPosition[currentIndex].position;
         currentTool = objectToolNamesRemove[currentIndex];
-
     }
 
     private void SelectUp()

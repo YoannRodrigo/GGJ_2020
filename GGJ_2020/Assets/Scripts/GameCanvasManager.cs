@@ -1,20 +1,22 @@
-﻿using System.Collections;
-using System.Collections.Generic;
+﻿#region
+
 using UnityEngine;
+
+#endregion
 
 public class GameCanvasManager : MonoBehaviour
 {
+    public int currentNbHoleFix;
+
+    public int currentNbHoleMax;
     public SelectControler leftController;
     public SelectControler rightController;
 
-    public int currentNbHoleMax;
-    public int currentNbHoleFix;
-    
     public bool IsLeftActive()
     {
         return leftController.canbeMoved;
     }
-    
+
     public bool IsRightActive()
     {
         return rightController.canbeMoved;
@@ -24,7 +26,7 @@ public class GameCanvasManager : MonoBehaviour
     {
         return leftController.GetCurrentTool();
     }
-    
+
     public string GetCurrentRightTool()
     {
         return rightController.GetCurrentTool();

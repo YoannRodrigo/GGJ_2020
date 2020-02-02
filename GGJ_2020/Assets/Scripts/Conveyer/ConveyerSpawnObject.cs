@@ -1,13 +1,15 @@
-﻿using System.Collections;
+﻿#region
+
 using System.Collections.Generic;
 using UnityEngine;
 
+#endregion
+
 public class ConveyerSpawnObject : MonoBehaviour
 {
+    private GameObject currentObject;
     [SerializeField] private List<GameObject> objectsToSpawn = new List<GameObject>();
     [SerializeField] private Transform spawnPoint;
-
-    private GameObject currentObject;
 
     // Update is called once per frame
     private void Update()
