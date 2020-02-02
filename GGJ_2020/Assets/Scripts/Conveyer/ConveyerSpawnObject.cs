@@ -15,11 +15,17 @@ public class ConveyerSpawnObject : MonoBehaviour
     [SerializeField] private TextMeshProUGUI nbSpawnLeftText;
 
     private int nbSpawnLeft = 10;
+    private bool canSpawnItem;
+
+    public void AllowSpawnItem()
+    {
+        canSpawnItem = true;
+    }
     
     // Update is called once per frame
     private void Update()
     {
-        if (currentObject == null && nbSpawnLeft > 0)
+        if (canSpawnItem && currentObject == null && nbSpawnLeft > 0)
         {
             currentObject = SpawnRandomObject();
             currentObject.GetComponent<RotateObject>().enabled = false;
