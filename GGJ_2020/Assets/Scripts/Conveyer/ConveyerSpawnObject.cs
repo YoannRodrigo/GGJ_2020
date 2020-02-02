@@ -34,4 +34,8 @@ public class ConveyerSpawnObject : MonoBehaviour
         int randomIndex = Random.Range(0, objectsToSpawn.Count);
         return Instantiate(objectsToSpawn[randomIndex], spawnPoint.position, spawnPoint.rotation);
     }
+
+    public void IncreaseNumberSpawn() {
+        nbSpawnLeft++;
+    }
 }
