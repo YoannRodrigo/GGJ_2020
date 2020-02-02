@@ -45,6 +45,7 @@ public class HoleParticleSystem : MonoBehaviour
         {
             Instantiate(objectToRemovePrefab, holeTransform.position, holeTransform.rotation, holeTransform);
         }
+        GetComponentInParent<Repair>().SetRepairNeeded(maxHoles+1);
     }
 
     #region Variables

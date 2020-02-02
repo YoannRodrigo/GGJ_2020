@@ -3,6 +3,7 @@
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 #endregion
 
@@ -13,7 +14,7 @@ public class ConveyerSpawnObject : MonoBehaviour
     [SerializeField] private Transform spawnPoint;
 
     [SerializeField] private TextMeshProUGUI nbSpawnLeftText;
-
+    [SerializeField] private GameObject valideBoutton;
     private int nbSpawnLeft = 10;
     private bool canSpawnItem;
 
@@ -25,10 +26,22 @@ public class ConveyerSpawnObject : MonoBehaviour
     // Update is called once per frame
     private void Update()
     {
-        if (canSpawnItem && currentObject == null && nbSpawnLeft > 0)
+        if (canSpawnItem && currentObject == null )
         {
-            currentObject = SpawnRandomObject();
-            currentObject.GetComponent<RotateObject>().enabled = false;
+            if(nbSpawnLeft > 0)
+            {
+                currentObject = SpawnRandomObject();
+                currentObject.GetComponent<RotateObject>().enabled = false;
+            }
+            else
+            {
+                valideBoutton.SetActive(true);
+                if (Input.GetButton("A"))
+                {
+                    
+                    SceneManager.LoadScene(0);
+                }
+            }
         }
 
         nbSpawnLeftText.text = "" + nbSpawnLeft;

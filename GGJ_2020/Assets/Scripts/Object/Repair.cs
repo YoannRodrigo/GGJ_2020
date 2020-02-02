@@ -1,5 +1,6 @@
 ﻿#region
 
+using System;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -17,9 +18,15 @@ public class Repair : MonoBehaviour
     }
 
     public bool isRepared;
-
+    private int repairCount;
+    private int repairNeeded;
     public Dictionary<GameObject, Inputs> objectsToRemoveDic;
 
+    public void SetRepairNeeded(int nbRepair)
+    {
+        repairNeeded = nbRepair;
+    }
+    
     // Start is called before the first frame update
     private void Start()
     {
@@ -85,7 +92,7 @@ public class Repair : MonoBehaviour
     public void DeleteObjectInDic(GameObject key)
     {
         objectsToRemoveDic.Remove(key);
-
-        isRepared = objectsToRemoveDic.Count == 0;
+        repairCount++;
+        isRepared = repairCount == repairNeeded;
     }
 }

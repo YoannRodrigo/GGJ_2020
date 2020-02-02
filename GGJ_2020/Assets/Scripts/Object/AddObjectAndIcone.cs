@@ -23,7 +23,7 @@ public class AddObjectAndIcone : MonoBehaviour
         {
             randomIndex = Random.Range(0, objectsToRemove.Count);
             currentObjectToRemove =
-                Instantiate(objectsToRemove[randomIndex], transform.position, Quaternion.identity, transform);
+                Instantiate(objectsToRemove[randomIndex], transform.position, transform.rotation * Quaternion.Euler(90,0,0), transform);
             transform.name = objectToolNamesRemove[randomIndex];
             GetComponent<DetectFacingCamera>().SetGameObjectsToRemove(transform, currentObjectToRemove);
         }
@@ -31,7 +31,7 @@ public class AddObjectAndIcone : MonoBehaviour
         {
             randomIndex = Random.Range(0, objectsToAdd.Count);
             currentObjectToRemove =
-                Instantiate(objectsToAdd[randomIndex], transform.position, Quaternion.identity, transform);
+                Instantiate(objectsToAdd[randomIndex], transform.position, transform.rotation * Quaternion.Euler(90,0,0), transform);
             transform.name = objectToolNamesRemove[randomIndex];
             GetComponent<DetectFacingCamera>().SetGameObjectsToAdd(transform, currentObjectToRemove);
         }
