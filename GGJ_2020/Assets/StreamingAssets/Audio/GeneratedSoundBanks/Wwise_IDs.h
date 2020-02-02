@@ -16,6 +16,7 @@ namespace AK
         static const AkUniqueID ANTENNA = 1855058110U;
         static const AkUniqueID BANANA = 3933301714U;
         static const AkUniqueID BOUCHON = 2948712071U;
+        static const AkUniqueID BOUTON = 1425802124U;
         static const AkUniqueID CONVEYOR_BELT = 1481508790U;
         static const AkUniqueID CORKCREW = 26926625U;
         static const AkUniqueID CROWBAR = 1837441319U;

@@ -5,6 +5,7 @@
 			<ChildrenList>
 				<SoundBank Name="main" ID="{A4EAD945-82CA-4E13-A8FA-2DBFE60127F3}">
 					<ObjectInclusionList>
+						<ObjectRef Name="Bouton" ID="{6C128623-972B-4033-9D1C-DBB3240AE76C}" WorkUnitID="{0D97209B-5DC1-4115-98D8-E794CAA6C986}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Scotch" ID="{31F22BEB-98D9-40B2-A21C-06BB89E27114}" WorkUnitID="{0D97209B-5DC1-4115-98D8-E794CAA6C986}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Pliers" ID="{A58829D2-AFC5-412E-8B8C-BF934EE6131B}" WorkUnitID="{0D97209B-5DC1-4115-98D8-E794CAA6C986}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Screw" ID="{BD08F16E-41ED-4158-A9C8-E31B43C9D393}" WorkUnitID="{0D97209B-5DC1-4115-98D8-E794CAA6C986}" Filter="7" Origin="Manual"/>

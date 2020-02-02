@@ -56,7 +56,7 @@ public class SoundManager : MonoBehaviour
                 AkSoundEngine.PostEvent("Sparadrap", Camera.main.gameObject);
                 break;
             case "Button" :
-                AkSoundEngine.PostEvent("LB_RB", Camera.main.gameObject);
+                AkSoundEngine.PostEvent("Bouton", Camera.main.gameObject);
                 break;
             case "Banana" :
                 AkSoundEngine.PostEvent("Banana", Camera.main.gameObject);
