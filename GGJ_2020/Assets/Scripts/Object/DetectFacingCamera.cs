@@ -98,7 +98,7 @@ public class DetectFacingCamera : MonoBehaviour
             }
         }
 
-        if (Input.GetButtonDown("Fire1"))
+        if (Input.GetButtonDown("A"))
         {
             if (mainObject.objectsToRemoveDic.ContainsKey(objectToRemove))
             {
@@ -109,7 +109,7 @@ public class DetectFacingCamera : MonoBehaviour
                 }
             }
         }
-        else if (Input.GetButtonDown("Fire3"))
+        else if (Input.GetButtonDown("X"))
         {
             if (mainObject.objectsToRemoveDic.ContainsKey(objectToRemove))
             {
@@ -120,7 +120,7 @@ public class DetectFacingCamera : MonoBehaviour
                 }
             }
         }
-        else if (Input.GetButtonDown("Jump"))
+        else if (Input.GetButtonDown("Y"))
         {
             if (mainObject.objectsToRemoveDic.ContainsKey(objectToRemove))
             {
@@ -131,7 +131,7 @@ public class DetectFacingCamera : MonoBehaviour
                 }
             }
         }
-        else if (Input.GetButtonDown("Fire2"))
+        else if (Input.GetButtonDown("B"))
         {
             if (mainObject.objectsToRemoveDic.ContainsKey(objectToRemove))
             {
