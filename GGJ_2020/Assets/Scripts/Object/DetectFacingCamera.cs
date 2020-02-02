@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using DG.Tweening;
@@ -8,12 +9,13 @@ public class DetectFacingCamera : MonoBehaviour {
     [SerializeField]
     private int cameraLayer;
     private int layerMask;
-
+    [SerializeField] private List<GameObject> iconesButton = new List<GameObject>();
+    private GameObject currentIconeButton;
     private bool isDetectingCamera;
     private bool hasSpawnParticule;
 
     [SerializeField]
-    private GameObject particuleButtonIcon;
+    private Transform particuleButtonIcon;
     [SerializeField]
     private GameObject particuleObjectIcon;
 
@@ -24,7 +26,7 @@ public class DetectFacingCamera : MonoBehaviour {
 
     private Repair mainObject;
 
-    public void SetGameObjects(GameObject particuleButtonIcon, GameObject objectToRemove)
+    public void SetGameObjects(Transform particuleButtonIcon, GameObject objectToRemove)
     {
         this.particuleButtonIcon = particuleButtonIcon;
         this.objectToRemove = objectToRemove;
@@ -118,25 +120,40 @@ public class DetectFacingCamera : MonoBehaviour {
     }
 
     private void ShowIcons() {
-        if(particuleButtonIcon)
-            particuleButtonIcon.SetActive(true);  //Show button
-        //particuleObjectIcon.SetActive(true);    //Show highlight
-        //if (!hasSpawnParticule) {
-        //    hasSpawnParticule = true;
-        //    //dire a l'obj on face cam
-
-        //}
-        //Debug.Log("input associé : " + mainObject.objectsToRemoveDic[objectToRemove]);
+        if(!currentIconeButton)
+        {
+            switch (mainObject.objectsToRemoveDic[objectToRemove])
+            {
+                case Repair.Inputs.SOUTH:
+                    currentIconeButton = Instantiate(iconesButton[0], particuleButtonIcon.position + 0.2f * particuleButtonIcon.forward,
+                        particuleButtonIcon.rotation,
+                        particuleButtonIcon);
+                    break;
+                case Repair.Inputs.WEST:
+                    currentIconeButton = Instantiate(iconesButton[1], particuleButtonIcon.position + 0.2f * particuleButtonIcon.forward,
+                        particuleButtonIcon.rotation,
+                        particuleButtonIcon);
+                    break;
+                case Repair.Inputs.NORTH:
+                    currentIconeButton = Instantiate(iconesButton[2], particuleButtonIcon.position + 0.2f * particuleButtonIcon.forward,
+                        particuleButtonIcon.rotation,
+                        particuleButtonIcon);
+                    break;
+                case Repair.Inputs.EAST:
+                    currentIconeButton = Instantiate(iconesButton[3], particuleButtonIcon.position + 0.2f * particuleButtonIcon.forward,
+                        particuleButtonIcon.rotation,
+                        particuleButtonIcon);
+                    break;
+                case Repair.Inputs.NONE:
+                    break;
+                default:
+                    throw new ArgumentOutOfRangeException();
+            }
+        }
     }
 
-    private void HideIcons() {
-        if(particuleButtonIcon)
-                particuleButtonIcon.SetActive(false); //Hide Icon
-        //particuleObjectIcon.SetActive(false);   //Hide highlight
-        //if (hasSpawnParticule) {
-        //    hasSpawnParticule = false;
-        //    //dire a l'obj on face plus la cam
-
-        //}
+    private void HideIcons() 
+    { 
+        Destroy(currentIconeButton);
     }
 }

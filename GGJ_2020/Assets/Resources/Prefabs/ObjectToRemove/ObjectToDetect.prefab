@@ -53,8 +53,6 @@ MonoBehaviour:
   - {fileID: 3571052055702781223, guid: 2821f9c4c591ba0489225bf494d4bc56, type: 3}
   - {fileID: 1907283600124245348, guid: 0cb207bd531966c4f86b7087658430ad, type: 3}
   - {fileID: 6785448718205731782, guid: d9f10aaa00e8bf240b591282dc6a5852, type: 3}
-  icones:
-  - {fileID: 5283132226369327487, guid: 6ba1a3012e5060d4bae65768c53be8e6, type: 3}
 --- !u!114 &1684122739739451995
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -68,6 +66,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cameraLayer: 8
+  iconesButton:
+  - {fileID: 34738635855327646, guid: bbf2cb7b5f1ec10409bf96b96bb3c90a, type: 3}
+  - {fileID: 8653482297213498423, guid: d37c2393f8af57341a1e263ae3471d66, type: 3}
+  - {fileID: 4835494726748753637, guid: 9f575a9283baeb946a1e4005de050e7c, type: 3}
+  - {fileID: 4719136295200422960, guid: 5df25ff15c2c5794f923e905c59808d6, type: 3}
   particuleButtonIcon: {fileID: 0}
   particuleObjectIcon: {fileID: 0}
   objectToRemove: {fileID: 0}
