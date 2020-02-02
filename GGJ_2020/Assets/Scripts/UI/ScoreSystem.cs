@@ -54,8 +54,8 @@ public class ScoreSystem : GenericSingleton<ScoreSystem>
             }
         }
 
-        TimeTextField.text = minutes + "m : " + seconds + "s";
-        ScoreTextField.text = "Score : " + score;
+        TimeTextField.text = minutes + ":" + seconds;
+        ScoreTextField.text = "" + score;
     }
 
     #endregion
