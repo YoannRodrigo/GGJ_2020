@@ -52,8 +52,6 @@ public class DetectFacingCamera : MonoBehaviour {
         camera = GameObject.FindGameObjectWithTag("MainCamera");
         gameManager = FindObjectOfType<GameCanvasManager>();
         mainObject = transform.root.GetComponent<Repair>();
-        if (mainObject) { Debug.Log(mainObject.name); }
-        else { Debug.Log("mainObject not find"); }
     }
 
     private void Update() {
@@ -91,7 +89,6 @@ public class DetectFacingCamera : MonoBehaviour {
 
         if (Input.GetButtonDown("Fire1")) {
             if (mainObject.objectsToRemoveDic.ContainsKey(objectToRemove)) {
-                Debug.Log("gameobject : " + gameObject + "; value : " + mainObject.objectsToRemoveDic[objectToRemove]);
                 if (isDetectingCamera && mainObject.objectsToRemoveDic[objectToRemove] == Repair.Inputs.SOUTH) {
                     //enlever objet
                     RemoveObject();
@@ -129,7 +126,11 @@ public class DetectFacingCamera : MonoBehaviour {
         if(objectToRemove.CompareTag("ObjectToRemove") && gameManager.IsLeftActive() && gameManager.GetCurrentLeftTool().Contains(name))
         {
             mainObject.DeleteObjectInDic(objectToRemove);
-            objectToRemove.transform.DOLocalMoveZ(distanceRemove, 1f).OnComplete(() => Destroy(gameObject));
+            objectToRemove.transform.DOLocalMoveZ(distanceRemove, 1f).OnComplete(() =>
+            {
+                gameManager.currentNbHoleFix++;
+                Destroy(gameObject);
+            });
         }
 
         if (objectToRemove.CompareTag("ObjectToAdd") && gameManager.IsRightActive() && gameManager.GetCurrentRightTool().Contains(name))
@@ -138,6 +139,7 @@ public class DetectFacingCamera : MonoBehaviour {
             GameObject newItem = GetComponent<AddObjectAndIcone>().SpawnItemToAdd();
             newItem.transform.DOMove(transform.position, 1f).OnComplete(() =>
             {
+                gameManager.currentNbHoleFix++;
                 Destroy(objectToRemove.gameObject);
                 Destroy(currentIconeButton.gameObject);
                 Destroy(this);

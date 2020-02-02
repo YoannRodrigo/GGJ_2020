@@ -23,7 +23,6 @@ public class Repair : MonoBehaviour
         GameObject[] objectsToRemove = GameObject.FindGameObjectsWithTag("ObjectToRemove");
         foreach (GameObject obj in objectsToRemove) {
             objectsToRemoveDic.Add(obj, Inputs.NONE);
-            Debug.Log("key : " + obj.name + "; value : " + Inputs.NONE);
         }
     }
     

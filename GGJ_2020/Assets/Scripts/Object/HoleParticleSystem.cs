@@ -41,6 +41,9 @@ public class HoleParticleSystem : MonoBehaviour
             holeTransformList.Add(transform.GetChild(randomChildIndex));
         }
 
+        FindObjectOfType<GameCanvasManager>().currentNbHoleMax = maxHoles;
+        FindObjectOfType<GameCanvasManager>().currentNbHoleFix = 0;
+        
         foreach (Transform holeTransform in holeTransformList)
         {
             Instantiate(objectToRemovePrefab, holeTransform.position, holeTransform.rotation, holeTransform);

@@ -7,6 +7,9 @@ public class GameCanvasManager : MonoBehaviour
     public SelectControler leftController;
     public SelectControler rightController;
 
+    public int currentNbHoleMax;
+    public int currentNbHoleFix;
+    
     public bool IsLeftActive()
     {
         return leftController.canbeMoved;
