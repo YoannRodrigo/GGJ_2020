@@ -18,6 +18,18 @@ public class ScoreSystem : GenericSingleton<ScoreSystem>
         {
             if (conveyerStopObject.IsFocused)
             {
+                if (comboCountBonus == 3) {
+                    //Debug.Log("combo count bonus = 3");
+                    if (currentObject != null) {
+                        currentObject.GetComponent<Repair>().isRepared = true;
+                        currentObject.GetComponent<RotateObject>().autoRepaired = true;
+                    }
+                    else {
+                        Debug.Log("current obj null");
+                    }
+
+                }
+
                 if (TimeIsFrozen)
                 {
                     if (!isEqualToFreezeTime)
@@ -81,6 +93,8 @@ public class ScoreSystem : GenericSingleton<ScoreSystem>
     private bool canMakeComboBonus = true;
     private bool canMakeComboMalus = true;
     private bool isDoubleScore = false;
+    [HideInInspector]
+    public GameObject currentObject;
 
 
     [SerializeField] private ConveyerStopObject conveyerStopObject;
@@ -98,16 +112,38 @@ public class ScoreSystem : GenericSingleton<ScoreSystem>
                 if (currentTimeLapsed <= 10)
                 {
                     score += 100;
+                    if (comboCountBonus == 2) {
+                        score += 100;
+                    } 
+                    //else if (comboCountBonus == 3) {
+                    //    gameObject.GetComponent<Repair>().isRepared = true;
+                    //    gameObject.GetComponent<RotateObject>().validate = true;
+
+                    //}
                     canMakeComboBonus = false;
                 }
                 else if (currentTimeLapsed <= 12)
                 {
                     score += 75;
+                    if (comboCountBonus == 2) {
+                        score += 75;
+                    } else if (comboCountBonus == 3) {
+                        //gameObject.GetComponent<Repair>().isRepared = true;
+                        //gameObject.GetComponent<RotateObject>().validate = true;
+                        score += 25;
+                    }
                     canMakeComboBonus = false;
                 }
                 else if (currentTimeLapsed <= 15)
                 {
                     score += 50;
+                    if (comboCountBonus == 2) {
+                        score += 50;
+                    } else if (comboCountBonus == 3) {
+                        //gameObject.GetComponent<Repair>().isRepared = true;
+                        //gameObject.GetComponent<RotateObject>().validate = true;
+                        score += 50;
+                    }
                     canMakeComboBonus = false;
                 }
                 else
@@ -116,10 +152,14 @@ public class ScoreSystem : GenericSingleton<ScoreSystem>
                     freezeSeconds = 3;
                     secondsFrozen = true;
                     if (canMakeComboBonus) {
-                        comboCountBonus++;
-                        if (comboCountBonus >= 2) {
+                        if (comboCountBonus == 2) {
                             score += 25;
+                        } else if (comboCountBonus == 3) {
+                            //gameObject.GetComponent<Repair>().isRepared = true;
+                            //gameObject.GetComponent<RotateObject>().validate = true;
+                            score += 75;
                         }
+                        comboCountBonus++;
                     }
                     canMakeComboBonus = true;
                     return score;
@@ -132,16 +172,37 @@ public class ScoreSystem : GenericSingleton<ScoreSystem>
                 if (currentTimeLapsed <= 15)
                 {
                     score += 100;
+                    if (comboCountBonus == 2) {
+                        score += 100;
+                    } 
+                    //else if (comboCountBonus == 3) {
+                    //    //gameObject.GetComponent<Repair>().isRepared = true;
+                    //    //gameObject.GetComponent<RotateObject>().validate = true;
+                    //}
                     canMakeComboBonus = false;
                 }
                 else if (currentTimeLapsed <= 18)
                 {
                     score += 75;
+                    if (comboCountBonus == 2) {
+                        score += 75;
+                    } else if (comboCountBonus == 3) {
+                        //gameObject.GetComponent<Repair>().isRepared = true;
+                        //gameObject.GetComponent<RotateObject>().validate = true;
+                        score += 25;
+                    }
                     canMakeComboBonus = false;
                 }
                 else if (currentTimeLapsed <= 22)
                 {
                     score += 50;
+                    if (comboCountBonus == 2) {
+                        score += 50;
+                    } else if (comboCountBonus == 3) {
+                        //gameObject.GetComponent<Repair>().isRepared = true;
+                        //gameObject.GetComponent<RotateObject>().validate = true;
+                        score += 50;
+                    }
                     canMakeComboBonus = false;
                 }
                 else
@@ -150,10 +211,14 @@ public class ScoreSystem : GenericSingleton<ScoreSystem>
                     freezeSeconds = 5;
                     secondsFrozen = true;
                     if (canMakeComboBonus) {
-                        comboCountBonus++;
-                        if (comboCountBonus >= 2) {
+                        if (comboCountBonus == 2) {
                             score += 25;
+                        } else if (comboCountBonus == 3) {
+                            //gameObject.GetComponent<Repair>().isRepared = true;
+                            //gameObject.GetComponent<RotateObject>().validate = true;
+                            score += 75;
                         }
+                        comboCountBonus++;
                     }
                     canMakeComboBonus = true;
                     return score;
@@ -166,16 +231,37 @@ public class ScoreSystem : GenericSingleton<ScoreSystem>
                 if (currentTimeLapsed <= 20)
                 {
                     score += 100;
+                    if (comboCountBonus == 2) {
+                        score += 100;
+                    }
+                    //else if (comboCountBonus == 3) {
+                    //    gameObject.GetComponent<Repair>().isRepared = true;
+                    //    gameObject.GetComponent<RotateObject>().validate = true;
+                    //}
                     canMakeComboBonus = false;
                 }
                 else if (currentTimeLapsed <= 22)
                 {
                     score += 75;
+                    if (comboCountBonus == 2) {
+                        score += 75;
+                    } else if (comboCountBonus == 3) {
+                        //gameObject.GetComponent<Repair>().isRepared = true;
+                        //gameObject.GetComponent<RotateObject>().validate = true;
+                        score += 25;
+                    }
                     canMakeComboBonus = false;
                 }
                 else if (currentTimeLapsed <= 26)
                 {
                     score += 50;
+                    if (comboCountBonus == 2) {
+                        score += 50;
+                    } else if (comboCountBonus == 3) {
+                        //gameObject.GetComponent<Repair>().isRepared = true;
+                        //gameObject.GetComponent<RotateObject>().validate = true;
+                        score += 50;
+                    }
                     canMakeComboBonus = false;
                 }
                 else
@@ -184,10 +270,14 @@ public class ScoreSystem : GenericSingleton<ScoreSystem>
                     freezeSeconds = 7;
                     secondsFrozen = true;
                     if (canMakeComboBonus) {
-                        comboCountBonus++;
-                        if (comboCountBonus >= 2) {
+                        if (comboCountBonus == 2) {
                             score += 25;
+                        } else if (comboCountBonus == 3) {
+                            //gameObject.GetComponent<Repair>().isRepared = true;
+                            //gameObject.GetComponent<RotateObject>().validate = true;
+                            score += 75;
                         }
+                        comboCountBonus++;
                     }
                     canMakeComboBonus = true;
                     return score;
