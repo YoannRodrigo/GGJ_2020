@@ -23,6 +23,8 @@ public class Repair : MonoBehaviour
     // Start is called before the first frame update
     private void Start()
     {
+        GameObject.FindObjectOfType<ScoreSystem>().currentObject = gameObject;
+        Debug.Log("scoresystem currentobject : " + FindObjectOfType<ScoreSystem>().currentObject);
         CreateDicToRemove();
         CreateDicToAddd();
     }

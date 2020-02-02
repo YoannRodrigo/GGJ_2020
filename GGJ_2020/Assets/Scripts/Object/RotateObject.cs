@@ -11,13 +11,20 @@ public class RotateObject : MonoBehaviour
     [SerializeField] private Transform childTransform;
     public ObjectDifficulty difficulty;
     private bool isSoundPlayed;
+    //[HideInInspector]
+    public bool validate;
+    public bool autoRepaired;
     
     private void Update()
     {
         float x = Input.GetAxis("Vertical");
         float y = Input.GetAxis("Horizontal");
-        bool validate = Input.GetAxis("Validate") > 0.0f;
+        validate = Input.GetAxis("Validate") > 0.0f;
         childTransform.Rotate(x, -y, 0, Space.World);
+
+        if (autoRepaired) {
+            validate = true;
+        }
 
         if (validate)
         {
