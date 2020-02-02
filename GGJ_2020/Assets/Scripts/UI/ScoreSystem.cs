@@ -76,6 +76,13 @@ public class ScoreSystem : GenericSingleton<ScoreSystem>
     private float temp;
     private int waitTime;
 
+    private int comboCountBonus = 0;
+    private int comboCountMalus = 0;
+    private bool canMakeComboBonus = true;
+    private bool canMakeComboMalus = true;
+    private bool isDoubleScore = false;
+
+
     [SerializeField] private ConveyerStopObject conveyerStopObject;
 
     #endregion
@@ -91,20 +98,30 @@ public class ScoreSystem : GenericSingleton<ScoreSystem>
                 if (currentTimeLapsed <= 10)
                 {
                     score += 100;
+                    canMakeComboBonus = false;
                 }
                 else if (currentTimeLapsed <= 12)
                 {
                     score += 75;
+                    canMakeComboBonus = false;
                 }
                 else if (currentTimeLapsed <= 15)
                 {
                     score += 50;
+                    canMakeComboBonus = false;
                 }
                 else
                 {
                     score += 25;
                     freezeSeconds = 3;
                     secondsFrozen = true;
+                    if (canMakeComboBonus) {
+                        comboCountBonus++;
+                        if (comboCountBonus >= 2) {
+                            score += 25;
+                        }
+                    }
+                    canMakeComboBonus = true;
                     return score;
                 }
 
@@ -115,20 +132,30 @@ public class ScoreSystem : GenericSingleton<ScoreSystem>
                 if (currentTimeLapsed <= 15)
                 {
                     score += 100;
+                    canMakeComboBonus = false;
                 }
                 else if (currentTimeLapsed <= 18)
                 {
                     score += 75;
+                    canMakeComboBonus = false;
                 }
                 else if (currentTimeLapsed <= 22)
                 {
                     score += 50;
+                    canMakeComboBonus = false;
                 }
                 else
                 {
                     score += 25;
                     freezeSeconds = 5;
                     secondsFrozen = true;
+                    if (canMakeComboBonus) {
+                        comboCountBonus++;
+                        if (comboCountBonus >= 2) {
+                            score += 25;
+                        }
+                    }
+                    canMakeComboBonus = true;
                     return score;
                 }
 
@@ -139,20 +166,30 @@ public class ScoreSystem : GenericSingleton<ScoreSystem>
                 if (currentTimeLapsed <= 20)
                 {
                     score += 100;
+                    canMakeComboBonus = false;
                 }
                 else if (currentTimeLapsed <= 22)
                 {
                     score += 75;
+                    canMakeComboBonus = false;
                 }
                 else if (currentTimeLapsed <= 26)
                 {
                     score += 50;
+                    canMakeComboBonus = false;
                 }
                 else
                 {
                     score += 25;
                     freezeSeconds = 7;
                     secondsFrozen = true;
+                    if (canMakeComboBonus) {
+                        comboCountBonus++;
+                        if (comboCountBonus >= 2) {
+                            score += 25;
+                        }
+                    }
+                    canMakeComboBonus = true;
                     return score;
                 }
 
