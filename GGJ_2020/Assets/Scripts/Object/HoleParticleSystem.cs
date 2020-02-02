@@ -31,10 +31,10 @@ public class HoleParticleSystem : MonoBehaviour
             default:
                 throw new ArgumentOutOfRangeException();
         }
-        for (int i = 0; i < maxHoles; i++) {
-            int randomChildIndex = UnityEngine.Random.Range(0, transform.childCount);
+        for (int i = 0; i <= maxHoles; i++) {
+            int randomChildIndex = Random.Range(0, transform.childCount);
             while (indexAlreadyChosen.Contains(randomChildIndex)) {
-                randomChildIndex = UnityEngine.Random.Range(0, transform.childCount);
+                randomChildIndex = Random.Range(0, transform.childCount);
             }
 
             indexAlreadyChosen.Add(randomChildIndex);
@@ -44,7 +44,6 @@ public class HoleParticleSystem : MonoBehaviour
         foreach (Transform holeTransform in holeTransformList)
         {
             Instantiate(objectToRemovePrefab, holeTransform.position, holeTransform.rotation, holeTransform);
-            holeTransform.GetComponent<ParticleSystem>().Play();
         }
     }
 }

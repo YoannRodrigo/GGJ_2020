@@ -27,36 +27,48 @@ public class ScoreSystem : GenericSingleton<ScoreSystem>
     private void Update() {
         int minutes = 0;
         int seconds = 0;
+        if(conveyerStopObject)
+        {
+            if (conveyerStopObject.IsFocused)
+            {
+                if (TimeIsFrozen)
+                {
 
-        if (conveyerStopObject.IsFocused) {
-            if (TimeIsFrozen) {
-                
-                if (!isEqualToFreezeTime) {
-                    temp += Time.deltaTime;
-                    waitTime = Mathf.FloorToInt(temp);
+                    if (!isEqualToFreezeTime)
+                    {
+                        temp += Time.deltaTime;
+                        waitTime = Mathf.FloorToInt(temp);
 
-                    if (waitTime >= freezeTime) {
-                        isEqualToFreezeTime = true;
+                        if (waitTime >= freezeTime)
+                        {
+                            isEqualToFreezeTime = true;
+                        }
                     }
-                } else {
-                    TimeIsFrozen = false;
+                    else
+                    {
+                        TimeIsFrozen = false;
+                    }
+
                 }
+                else
+                {
 
-            } else {
+                    timeSinceObjectInFront += Time.deltaTime;
+                    minutes = Mathf.FloorToInt(timeSinceObjectInFront / 60);
+                    seconds = Mathf.FloorToInt(timeSinceObjectInFront - minutes * 60);
+                    timeLapsed = seconds;
 
-                timeSinceObjectInFront += Time.deltaTime;
-                minutes = Mathf.FloorToInt(timeSinceObjectInFront / 60);
-                seconds = Mathf.FloorToInt(timeSinceObjectInFront - minutes * 60);
-                timeLapsed = seconds;
-                
+                }
             }
-        } else {
-            timeSinceObjectInFront = 0;
-            minutes = 0;
-            seconds = 0;
-            waitTime = 0;
-            temp = 0;
-            isEqualToFreezeTime = false;
+            else
+            {
+                timeSinceObjectInFront = 0;
+                minutes = 0;
+                seconds = 0;
+                waitTime = 0;
+                temp = 0;
+                isEqualToFreezeTime = false;
+            }
         }
         
         TimeTextField.text = minutes + "m : " + seconds + "s";

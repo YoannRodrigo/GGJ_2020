@@ -53,6 +53,15 @@ MonoBehaviour:
   - {fileID: 3571052055702781223, guid: 2821f9c4c591ba0489225bf494d4bc56, type: 3}
   - {fileID: 1907283600124245348, guid: 0cb207bd531966c4f86b7087658430ad, type: 3}
   - {fileID: 6785448718205731782, guid: d9f10aaa00e8bf240b591282dc6a5852, type: 3}
+  objectsToAdd:
+  - {fileID: 5151824120766930617, guid: 4d1a900a87cd5a24aab43e53ce6afa39, type: 3}
+  - {fileID: 3854061524392499753, guid: 0cc8c02916a7b1445bccfe8ed2dced86, type: 3}
+  - {fileID: 6132395141696560901, guid: abf2ba75c77505f47b4665472bf8999d, type: 3}
+  - {fileID: 3782854280567020034, guid: bb68dd3bae6fc60498430fcfce8e1b6c, type: 3}
+  - {fileID: 1799401858935919987, guid: d27212fbd1b8ba54aa52c9debe96da2c, type: 3}
+  - {fileID: 1393416080383807541, guid: 916fa809ff9e36048b1291605250a6f9, type: 3}
+  - {fileID: 1399823925456737385, guid: e55c3928f464ef343854c6acd22d1069, type: 3}
+  - {fileID: 3519304932609843474, guid: c5c530f39fa18754da9b5cdf831ad0d6, type: 3}
 --- !u!114 &1684122739739451995
 MonoBehaviour:
   m_ObjectHideFlags: 0
