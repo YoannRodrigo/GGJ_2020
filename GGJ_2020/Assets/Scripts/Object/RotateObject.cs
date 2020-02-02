@@ -27,11 +27,12 @@ public class RotateObject : MonoBehaviour
             }
             
             if (target.GetComponent<ConveyerStopObject>().IsFocused) {
-                ScoreSystem.Instance.Score = ScoreSystem.Instance.SetScore(gameObject, ScoreSystem.Instance.TimeLapsed);
+                ScoreSystem.Instance.Score = ScoreSystem.Instance.SetScore(gameObject, ScoreSystem.Instance.TimeLapsed, out int freezeSecondsHolder, out bool timeIsFrozenHolder);
+                ScoreSystem.Instance.freezeTime = freezeSecondsHolder;
+                ScoreSystem.Instance.TimeIsFrozen = timeIsFrozenHolder;
             }
             target.GetComponent<ConveyerStopObject>().IsFocused = false;
             
-
         }
     }
 }
