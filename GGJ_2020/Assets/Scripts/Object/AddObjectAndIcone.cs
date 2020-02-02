@@ -4,6 +4,7 @@ using UnityEngine;
 public class AddObjectAndIcone : MonoBehaviour
 {
     [SerializeField] private List<GameObject> objectsToRemove;
+    private readonly List<string> objectToolNamesRemove = new List<string>(8) {"Antenna","Flipper","Nail","Plug","Screw","Sparadras","Button","Banana"};
     [SerializeField] private List<GameObject> objectsToAdd;
     private GameObject currentObjectToRemove;
     private GameObject currentIcone;
@@ -16,6 +17,7 @@ public class AddObjectAndIcone : MonoBehaviour
             int randomIndex = Random.Range(0, objectsToRemove.Count);
             currentObjectToRemove =
                 Instantiate(objectsToRemove[randomIndex], transform.position, Quaternion.identity, transform);
+            transform.name = objectToolNamesRemove[randomIndex];
             GetComponent<DetectFacingCamera>().SetGameObjectsToRemove(transform, currentObjectToRemove);
         }
         else
@@ -23,6 +25,7 @@ public class AddObjectAndIcone : MonoBehaviour
             int randomIndex = Random.Range(0, objectsToAdd.Count);
             currentObjectToRemove =
                 Instantiate(objectsToAdd[randomIndex], transform.position, Quaternion.identity, transform);
+            transform.name = objectToolNamesRemove[randomIndex];
             GetComponent<DetectFacingCamera>().SetGameObjectsToAdd(transform, currentObjectToRemove);
         }
     }

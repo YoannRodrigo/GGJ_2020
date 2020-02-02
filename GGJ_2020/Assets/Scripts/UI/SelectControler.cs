@@ -7,9 +7,16 @@ using UnityEngine;
 public class SelectControler : MonoBehaviour
 {
     public List<Transform> framesPosition = new List<Transform>();
+    private List<string> objectToolNamesRemove = new List<string>(9) {"Plug","Nail","Button","Stain","Flipper","Antenna","Screw","Banana", "Sparadras"};
+    private string currentTool;
     private int currentIndex;
     public bool canbeMoved;
     private bool isPositionReset = true;
+
+    public string GetCurrentTool()
+    {
+        return currentTool;
+    }
     
     private void Update()
     {
@@ -26,7 +33,10 @@ public class SelectControler : MonoBehaviour
         {
             isPositionReset = true;
         }
-            
+        
+        transform.position = framesPosition[currentIndex].position;
+        currentTool = objectToolNamesRemove[currentIndex];
+
     }
 
     private void SelectUp()
@@ -39,8 +49,6 @@ public class SelectControler : MonoBehaviour
             {
                 currentIndex = framesPosition.Count - 1;
             }
-
-            transform.position = framesPosition[currentIndex].position;
         }
     }
 
@@ -54,7 +62,6 @@ public class SelectControler : MonoBehaviour
             {
                 currentIndex = 0;
             }
-            transform.position = framesPosition[currentIndex].position;
         }
     }
 }

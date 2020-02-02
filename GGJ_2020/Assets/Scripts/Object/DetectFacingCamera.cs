@@ -24,6 +24,8 @@ public class DetectFacingCamera : MonoBehaviour {
     [SerializeField]
     private float distanceRemove = 1f;
 
+    private GameCanvasManager gameManager;
+
     private Repair mainObject;
 
     public void SetGameObjectsToRemove(Transform particuleButtonIcon, GameObject objectToRemove)
@@ -48,6 +50,7 @@ public class DetectFacingCamera : MonoBehaviour {
         //    }
         //}
         camera = GameObject.FindGameObjectWithTag("MainCamera");
+        gameManager = FindObjectOfType<GameCanvasManager>();
         mainObject = transform.root.GetComponent<Repair>();
         if (mainObject) { Debug.Log(mainObject.name); }
         else { Debug.Log("mainObject not find"); }
@@ -121,10 +124,13 @@ public class DetectFacingCamera : MonoBehaviour {
         }
     }
 
-    private void RemoveObject() {
-        Debug.Log("enlever objet");
-        mainObject.DeleteObjectInDic(objectToRemove);
-        objectToRemove.transform.DOLocalMoveZ(distanceRemove, 1f).OnComplete(() => objectToRemove.SetActive(false));
+    private void RemoveObject() 
+    {
+        if(objectToRemove.CompareTag("ObjectToRemove") && gameManager.IsLeftActive() && gameManager.GetCurrentLeftTool().Contains(name))
+        {
+            mainObject.DeleteObjectInDic(objectToRemove);
+            objectToRemove.transform.DOLocalMoveZ(distanceRemove, 1f).OnComplete(() => Destroy(gameObject));
+        }
     }
 
     private void ShowIcons() {
