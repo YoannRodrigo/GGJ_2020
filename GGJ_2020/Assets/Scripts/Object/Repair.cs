@@ -11,7 +11,14 @@ public class Repair : MonoBehaviour
     public bool isRepared;
 
     // Start is called before the first frame update
-    void Start() {
+    private void Start()
+    {
+        CreateDicToRemove();
+        CreateDicToAddd();
+    }
+
+    private void CreateDicToRemove()
+    {
         objectsToRemoveDic = new Dictionary<GameObject, Inputs>();
         GameObject[] objectsToRemove = GameObject.FindGameObjectsWithTag("ObjectToRemove");
         foreach (GameObject obj in objectsToRemove) {
@@ -19,12 +26,16 @@ public class Repair : MonoBehaviour
             Debug.Log("key : " + obj.name + "; value : " + Inputs.NONE);
         }
     }
-
-    // Update is called once per frame
-    void Update()
+    
+    private void CreateDicToAddd()
     {
+        GameObject[] objectsToRemove = GameObject.FindGameObjectsWithTag("ObjectToAdd");
+        foreach (GameObject obj in objectsToRemove) {
+            objectsToRemoveDic.Add(obj, Inputs.NONE);
+            Debug.Log("key : " + obj.name + "; value : " + Inputs.NONE);
+        }
     }
-
+    
     public void AddInputInDic(GameObject key) {
         if (objectsToRemoveDic.ContainsValue(Inputs.SOUTH)) {
             if (objectsToRemoveDic.ContainsValue(Inputs.WEST)) {

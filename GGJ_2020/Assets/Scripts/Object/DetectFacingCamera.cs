@@ -13,7 +13,7 @@ public class DetectFacingCamera : MonoBehaviour {
     private GameObject currentIconeButton;
     private bool isDetectingCamera;
     private bool hasSpawnParticule;
-
+    private bool gameObjectNeedTobeRemoved;
     [SerializeField]
     private Transform particuleButtonIcon;
     [SerializeField]
@@ -26,10 +26,18 @@ public class DetectFacingCamera : MonoBehaviour {
 
     private Repair mainObject;
 
-    public void SetGameObjects(Transform particuleButtonIcon, GameObject objectToRemove)
+    public void SetGameObjectsToRemove(Transform particuleButtonIcon, GameObject objectToRemove)
     {
+        gameObjectNeedTobeRemoved = true;
         this.particuleButtonIcon = particuleButtonIcon;
         this.objectToRemove = objectToRemove;
+    }
+    
+    public void SetGameObjectsToAdd(Transform particuleButtonIcon, GameObject objectToAdd)
+    {
+        gameObjectNeedTobeRemoved = false;
+        this.particuleButtonIcon = particuleButtonIcon;
+        objectToRemove = objectToAdd;
     }
 
     private void Start() {
@@ -150,10 +158,19 @@ public class DetectFacingCamera : MonoBehaviour {
                     throw new ArgumentOutOfRangeException();
             }
         }
+
+        if (!gameObjectNeedTobeRemoved)
+        {
+            objectToRemove.SetActive(true);
+        }
     }
 
     private void HideIcons() 
     { 
         Destroy(currentIconeButton);
+        if (!gameObjectNeedTobeRemoved)
+        {
+            objectToRemove.SetActive(false);
+        }
     }
 }
