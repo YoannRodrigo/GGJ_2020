@@ -21,6 +21,7 @@ public class RotateObject : MonoBehaviour
 
         if (validate)
         {
+            AkSoundEngine.PostEvent("Validation", Camera.main.gameObject);
             Transform target = FindObjectOfType<ConveyerStopObject>().transform;
             GetComponent<Rigidbody>().useGravity = true;
             GetComponent<Rigidbody>().isKinematic = false;

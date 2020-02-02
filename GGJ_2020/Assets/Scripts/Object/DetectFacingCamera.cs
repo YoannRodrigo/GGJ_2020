@@ -149,6 +149,7 @@ public class DetectFacingCamera : MonoBehaviour
         if (objectToRemove.CompareTag("ObjectToRemove") && gameManager.IsLeftActive() &&
             gameManager.GetCurrentLeftTool().Contains(name))
         {
+            FindObjectOfType<SoundManager>().PlayASoundOnRemove(name);
             mainObject.DeleteObjectInDic(objectToRemove);
             objectToRemove.transform.DOLocalMoveZ(distanceRemove, 1f).OnComplete(() =>
             {
@@ -160,6 +161,7 @@ public class DetectFacingCamera : MonoBehaviour
         if (objectToRemove.CompareTag("ObjectToAdd") && gameManager.IsRightActive() &&
             gameManager.GetCurrentRightTool().Contains(name))
         {
+            FindObjectOfType<SoundManager>().PlayASoundOnAdd(name);
             mainObject.DeleteObjectInDic(objectToRemove);
             GameObject newItem = GetComponent<AddObjectAndIcone>().SpawnItemToAdd();
             newItem.transform.DOMove(transform.position, 1f).OnComplete(() =>

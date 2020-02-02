@@ -16,5 +16,134 @@
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 		</SoundBank>
+		<SoundBank Id="3161908922" Language="SFX">
+			<ObjectPath>\SoundBanks\Default Work Unit\main</ObjectPath>
+			<ShortName>main</ShortName>
+			<Path>main.bnk</Path>
+			<IncludedEvents>
+				<Event Id="1855058110" Name="Antenna" ObjectPath="\Events\Default Work Unit\Antenna" DurationType="OneShot" DurationMin="1.306122" DurationMax="1.306122"/>
+				<Event Id="3933301714" Name="Banana" ObjectPath="\Events\Default Work Unit\Banana" DurationType="OneShot" DurationMin="0.444082" DurationMax="0.444082"/>
+				<Event Id="2948712071" Name="Bouchon" ObjectPath="\Events\Default Work Unit\Bouchon" DurationType="OneShot" DurationMin="0.470204" DurationMax="0.470204"/>
+				<Event Id="1481508790" Name="Conveyor_Belt" ObjectPath="\Events\Default Work Unit\Conveyor_Belt" DurationType="OneShot" DurationMin="2.142041" DurationMax="2.142041"/>
+				<Event Id="26926625" Name="Corkcrew" ObjectPath="\Events\Default Work Unit\Corkcrew" DurationType="OneShot" DurationMin="2.533878" DurationMax="2.533878"/>
+				<Event Id="1837441319" Name="Crowbar" ObjectPath="\Events\Default Work Unit\Crowbar" DurationType="OneShot" DurationMin="1.488980" DurationMax="1.488980"/>
+				<Event Id="2168413864" Name="Drill" ObjectPath="\Events\Default Work Unit\Drill" DurationType="OneShot" DurationMin="2.246531" DurationMax="2.246531"/>
+				<Event Id="2695658327" Name="Fish" ObjectPath="\Events\Default Work Unit\Fish" DurationType="OneShot" DurationMin="0.809796" DurationMax="0.809796"/>
+				<Event Id="3848107264" Name="Fleches_directionnelles" ObjectPath="\Events\Default Work Unit\Fleches_directionnelles" DurationType="OneShot" DurationMin="0.182857" DurationMax="0.182857"/>
+				<Event Id="3666971986" Name="Hand" ObjectPath="\Events\Default Work Unit\Hand" DurationType="OneShot" DurationMin="0.417959" DurationMax="0.417959"/>
+				<Event Id="809474474" Name="LB_RB" ObjectPath="\Events\Default Work Unit\LB_RB" DurationType="OneShot" DurationMin="0.208980" DurationMax="0.208980"/>
+				<Event Id="3932397148" Name="Marteau" ObjectPath="\Events\Default Work Unit\Marteau" DurationType="OneShot" DurationMin="1.462857" DurationMax="1.462857"/>
+				<Event Id="3948471538" Name="Monkey" ObjectPath="\Events\Default Work Unit\Monkey" DurationType="OneShot" DurationMin="0.626939" DurationMax="0.626939"/>
+				<Event Id="864764337" Name="Nail" ObjectPath="\Events\Default Work Unit\Nail" DurationType="OneShot" DurationMin="1.750204" DurationMax="1.750204"/>
+				<Event Id="2779631002" Name="Pliers" ObjectPath="\Events\Default Work Unit\Pliers" DurationType="OneShot" DurationMin="1.320000" DurationMax="1.320000"/>
+				<Event Id="3319001673" Name="Pshit" ObjectPath="\Events\Default Work Unit\Pshit" DurationType="OneShot" DurationMin="0.840000" DurationMax="0.840000"/>
+				<Event Id="443572616" Name="Saw" ObjectPath="\Events\Default Work Unit\Saw" DurationType="OneShot" DurationMin="1.828571" DurationMax="1.828571"/>
+				<Event Id="2637934307" Name="Scalpel" ObjectPath="\Events\Default Work Unit\Scalpel" DurationType="OneShot" DurationMin="0.626939" DurationMax="0.626939"/>
+				<Event Id="3189580687" Name="Scotch" ObjectPath="\Events\Default Work Unit\Scotch" DurationType="OneShot" DurationMin="1.018775" DurationMax="1.018775"/>
+				<Event Id="2316462023" Name="Screw" ObjectPath="\Events\Default Work Unit\Screw" DurationType="OneShot" DurationMin="1.272000" DurationMax="1.272000"/>
+				<Event Id="1958283141" Name="Screwdriver" ObjectPath="\Events\Default Work Unit\Screwdriver" DurationType="OneShot" DurationMin="1.680000" DurationMax="1.680000"/>
+				<Event Id="3492049339" Name="Sparadrap" ObjectPath="\Events\Default Work Unit\Sparadrap" DurationType="OneShot" DurationMin="0.679184" DurationMax="0.679184"/>
+				<Event Id="1164367376" Name="Stain" ObjectPath="\Events\Default Work Unit\Stain" DurationType="OneShot" DurationMin="0.731429" DurationMax="0.731429"/>
+				<Event Id="1719053472" Name="Validation" ObjectPath="\Events\Default Work Unit\Validation" DurationType="OneShot" DurationMin="0.395458" DurationMax="0.395458"/>
+			</IncludedEvents>
+			<IncludedMemoryFiles>
+				<File Id="88240697" Language="SFX">
+					<ShortName>nail.wav</ShortName>
+					<Path>SFX\nail_10C4C929.wem</Path>
+				</File>
+				<File Id="123911089" Language="SFX">
+					<ShortName>corkcrew.wav</ShortName>
+					<Path>SFX\corkcrew_10C4C929.wem</Path>
+				</File>
+				<File Id="138279347" Language="SFX">
+					<ShortName>screw.wav</ShortName>
+					<Path>SFX\screw_10C4C929.wem</Path>
+				</File>
+				<File Id="253921428" Language="SFX">
+					<ShortName>bouchon.wav</ShortName>
+					<Path>SFX\bouchon_10C4C929.wem</Path>
+				</File>
+				<File Id="261009503" Language="SFX">
+					<ShortName>pshitpshit.wav</ShortName>
+					<Path>SFX\pshitpshit_10C4C929.wem</Path>
+				</File>
+				<File Id="326123440" Language="SFX">
+					<ShortName>scalpel.wav</ShortName>
+					<Path>SFX\scalpel_10C4C929.wem</Path>
+				</File>
+				<File Id="423399962" Language="SFX">
+					<ShortName>validation.wav</ShortName>
+					<Path>SFX\validation_10C4C929.wem</Path>
+				</File>
+				<File Id="447953917" Language="SFX">
+					<ShortName>banana.wav</ShortName>
+					<Path>SFX\banana_10C4C929.wem</Path>
+				</File>
+				<File Id="451225214" Language="SFX">
+					<ShortName>marteau.wav</ShortName>
+					<Path>SFX\marteau_10C4C929.wem</Path>
+				</File>
+				<File Id="533370281" Language="SFX">
+					<ShortName>antenna.wav</ShortName>
+					<Path>SFX\antenna_10C4C929.wem</Path>
+				</File>
+				<File Id="606025091" Language="SFX">
+					<ShortName>pliers.wav</ShortName>
+					<Path>SFX\pliers_10C4C929.wem</Path>
+				</File>
+				<File Id="634756674" Language="SFX">
+					<ShortName>conveyor belt.wav</ShortName>
+					<Path>SFX\conveyor belt_10C4C929.wem</Path>
+				</File>
+				<File Id="641834889" Language="SFX">
+					<ShortName>LB_RB.wav</ShortName>
+					<Path>SFX\LB_RB_10C4C929.wem</Path>
+				</File>
+				<File Id="669910624" Language="SFX">
+					<ShortName>saw metal.wav</ShortName>
+					<Path>SFX\saw metal_10C4C929.wem</Path>
+				</File>
+				<File Id="687476913" Language="SFX">
+					<ShortName>hand.wav</ShortName>
+					<Path>SFX\hand_10C4C929.wem</Path>
+				</File>
+				<File Id="688593885" Language="SFX">
+					<ShortName>fish.wav</ShortName>
+					<Path>SFX\fish_10C4C929.wem</Path>
+				</File>
+				<File Id="710174251" Language="SFX">
+					<ShortName>drill.wav</ShortName>
+					<Path>SFX\drill_10C4C929.wem</Path>
+				</File>
+				<File Id="846969950" Language="SFX">
+					<ShortName>monkey scream.wav</ShortName>
+					<Path>SFX\monkey scream_10C4C929.wem</Path>
+				</File>
+				<File Id="856549987" Language="SFX">
+					<ShortName>sparadrap.wav</ShortName>
+					<Path>SFX\sparadrap_10C4C929.wem</Path>
+				</File>
+				<File Id="870091873" Language="SFX">
+					<ShortName>screwdriver.wav</ShortName>
+					<Path>SFX\screwdriver_10C4C929.wem</Path>
+				</File>
+				<File Id="981346042" Language="SFX">
+					<ShortName>crowbar.wav</ShortName>
+					<Path>SFX\crowbar_10C4C929.wem</Path>
+				</File>
+				<File Id="998273586" Language="SFX">
+					<ShortName>stain.wav</ShortName>
+					<Path>SFX\stain_10C4C929.wem</Path>
+				</File>
+				<File Id="1013410684" Language="SFX">
+					<ShortName>flèches directionnelles.wav</ShortName>
+					<Path>SFX\flèches directionnelles_10C4C929.wem</Path>
+				</File>
+				<File Id="1048901683" Language="SFX">
+					<ShortName>scotch.wav</ShortName>
+					<Path>SFX\scotch_10C4C929.wem</Path>
+				</File>
+			</IncludedMemoryFiles>
+		</SoundBank>
 	</SoundBanks>
 </SoundBanksInfo>

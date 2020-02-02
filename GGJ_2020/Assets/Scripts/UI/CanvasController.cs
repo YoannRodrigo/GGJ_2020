@@ -20,12 +20,14 @@ public class CanvasController : MonoBehaviour
     {
         if (Input.GetButton("LeftButton"))
         {
+            AkSoundEngine.PostEvent("LB_RB", Camera.main.gameObject);
             animator.SetBool(framesRightIn, false);
             animator.SetBool(framesLeftIn, true);
         }
 
         if (Input.GetButton("RightButton"))
         {
+            AkSoundEngine.PostEvent("LB_RB", Camera.main.gameObject);
             animator.SetBool(framesRightIn, true);
             animator.SetBool(framesLeftIn, false);
         }
