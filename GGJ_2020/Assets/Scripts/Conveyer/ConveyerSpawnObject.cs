@@ -1,6 +1,7 @@
 ﻿#region
 
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 
 #endregion
@@ -11,18 +12,25 @@ public class ConveyerSpawnObject : MonoBehaviour
     [SerializeField] private List<GameObject> objectsToSpawn = new List<GameObject>();
     [SerializeField] private Transform spawnPoint;
 
+    [SerializeField] private TextMeshProUGUI nbSpawnLeftText;
+
+    private int nbSpawnLeft = 10;
+    
     // Update is called once per frame
     private void Update()
     {
-        if (currentObject == null)
+        if (currentObject == null && nbSpawnLeft > 0)
         {
             currentObject = SpawnRandomObject();
             currentObject.GetComponent<RotateObject>().enabled = false;
         }
+
+        nbSpawnLeftText.text = "" + nbSpawnLeft;
     }
 
     private GameObject SpawnRandomObject()
     {
+        nbSpawnLeft--;
         int randomIndex = Random.Range(0, objectsToSpawn.Count);
         return Instantiate(objectsToSpawn[randomIndex], spawnPoint.position, spawnPoint.rotation);
     }

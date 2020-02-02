@@ -8804,6 +8804,7 @@ MonoBehaviour:
   - {fileID: 6666514789453961838, guid: c6cd1618e156a50498dd84d694a41fe1, type: 3}
   - {fileID: 6666514789453961838, guid: c6cd1618e156a50498dd84d694a41fe1, type: 3}
   spawnPoint: {fileID: 1792066246}
+  nbSpawnLeftText: {fileID: 580557426}
 --- !u!65 &1796667353
 BoxCollider:
   m_ObjectHideFlags: 0
