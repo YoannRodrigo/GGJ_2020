@@ -12,6 +12,10 @@ public class ConveyerDestroyObject : MonoBehaviour
         {
             if (other.GetComponent<Repair>().isRepared)
             {
+                ScoreSystem.Instance.Score = ScoreSystem.Instance.SetScore(other.gameObject, ScoreSystem.Instance.TimeLapsed,
+                    out int freezeSecondsHolder, out bool timeIsFrozenHolder);
+                ScoreSystem.Instance.freezeTime = freezeSecondsHolder;
+                ScoreSystem.Instance.TimeIsFrozen = timeIsFrozenHolder;
                 Debug.Log("gagne bonus"); //bonus fonction
             }
 

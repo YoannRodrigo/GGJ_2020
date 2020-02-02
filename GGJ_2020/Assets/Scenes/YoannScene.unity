@@ -1165,10 +1165,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6a741168f87f30846be4bd2fc9a0db76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  currentNbHoleFix: 0
+  currentNbHoleMax: 0
   leftController: {fileID: 732332150}
   rightController: {fileID: 1988633586}
-  currentNbHoleMax: 0
-  currentNbHoleFix: 0
 --- !u!224 &352894947 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 7422980940676065847, guid: 87f03644e6d731647b56fb8c4e01e8f8,
@@ -2551,6 +2551,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 256394f3181aa734c859b1fb413fba2f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  canbeMoved: 0
   framesPosition:
   - {fileID: 1388222535}
   - {fileID: 127325619}
@@ -2561,7 +2562,6 @@ MonoBehaviour:
   - {fileID: 94912671}
   - {fileID: 1208361893}
   - {fileID: 2113347086}
-  canbeMoved: 0
 --- !u!1001 &738466653
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5408,7 +5408,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1455624639}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.029, z: 0.987}
+  m_LocalPosition: {x: 0, y: 0.03, z: 0.8}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 963194228}
@@ -7863,6 +7863,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 256394f3181aa734c859b1fb413fba2f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  canbeMoved: 0
   framesPosition:
   - {fileID: 107216559}
   - {fileID: 378261485}
@@ -7873,7 +7874,6 @@ MonoBehaviour:
   - {fileID: 1928477070}
   - {fileID: 1260576986}
   - {fileID: 98657121}
-  canbeMoved: 0
 --- !u!1 &2001878531 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -927199367670048503, guid: 8f652be7672589b44b204b6d602b29fd,
